@@ -66,7 +66,7 @@ async function loadMetadata() {
     throw new Error('Bundled content metadata is missing.')
   }
 
-  return metadataSchema.parse(JSON.parse(raw))
+  return metadataSchema.parse(JSON.parse(raw as string))
 }
 
 async function readSource(entry: MetadataEntry) {
