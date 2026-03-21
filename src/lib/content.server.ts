@@ -1,12 +1,19 @@
-import { readFile } from 'node:fs/promises'
-import path from 'node:path'
 import { generateText, Output } from 'ai'
 import { z } from 'zod'
 
 const ROUTER_MODEL = 'openai/gpt-5.4-mini'
 
-const CONTENT_DIR = path.join(process.cwd(), 'content')
-const METADATA_PATH = path.join(CONTENT_DIR, 'metadata.json')
+const bundledMetadata = import.meta.glob('../../content/metadata.json', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+})
+
+const bundledMarkdown = import.meta.glob('../../content/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+})
 
 const metadataEntrySchema = z.object({
   id: z.string(),
@@ -53,13 +60,23 @@ function scoreFallback(question: string, entry: MetadataEntry) {
 }
 
 async function loadMetadata() {
-  const raw = await readFile(METADATA_PATH, 'utf8')
+  const raw = bundledMetadata['../../content/metadata.json']
+
+  if (!raw) {
+    throw new Error('Bundled content metadata is missing.')
+  }
+
   return metadataSchema.parse(JSON.parse(raw))
 }
 
 async function readSource(entry: MetadataEntry) {
-  const absolutePath = path.join(process.cwd(), entry.path)
-  const content = await readFile(absolutePath, 'utf8')
+  const relativePath = `../../${entry.path}`
+  const content = bundledMarkdown[relativePath]
+
+  if (!content) {
+    throw new Error(`Bundled handbook content is missing for ${entry.path}.`)
+  }
+
   return {
     ...entry,
     content,
