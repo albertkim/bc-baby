@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { createFileRoute } from '@tanstack/react-router'
 import { DefaultChatTransport } from 'ai'
-import { ArrowUp, LoaderCircle, Square } from 'lucide-react'
+import { ArrowUp, ChevronDown, ChevronUp, LoaderCircle, Square } from 'lucide-react'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import {
@@ -13,7 +13,6 @@ import {
   CardTitle,
 } from '#/components/ui/card'
 import { ScrollArea } from '#/components/ui/scroll-area'
-import { Separator } from '#/components/ui/separator'
 import { Textarea } from '#/components/ui/textarea'
 
 export const Route = createFileRoute('/')({ component: App })
@@ -34,6 +33,7 @@ function getMessageText(parts: Array<{ type: string; text?: string }>) {
 
 function App() {
   const [input, setInput] = useState('')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const scrollAreaRef = useRef<HTMLDivElement | null>(null)
   const previousBusyRef = useRef(false)
 
@@ -53,18 +53,22 @@ function App() {
   const { messages, sendMessage, status, stop, error } = useChat({ transport })
   const busy = status !== 'ready'
 
+  function scrollToBottom(behavior: ScrollBehavior) {
+    const viewport = scrollAreaRef.current?.querySelector(
+      '[data-slot="scroll-area-viewport"]',
+    )
+
+    if (viewport instanceof HTMLElement) {
+      viewport.scrollTo({
+        top: viewport.scrollHeight,
+        behavior,
+      })
+    }
+  }
+
   useEffect(() => {
     if (!busy && previousBusyRef.current) {
-      const viewport = scrollAreaRef.current?.querySelector(
-        '[data-slot="scroll-area-viewport"]',
-      )
-
-      if (viewport instanceof HTMLElement) {
-        viewport.scrollTo({
-          top: viewport.scrollHeight,
-          behavior: 'smooth',
-        })
-      }
+      scrollToBottom('smooth')
     }
 
     previousBusyRef.current = busy
@@ -79,33 +83,71 @@ function App() {
 
     sendMessage({ text: value })
     setInput('')
+    requestAnimationFrame(() => scrollToBottom('smooth'))
   }
 
   return (
-    <main className="mx-auto flex h-dvh w-full max-w-6xl flex-col overflow-hidden px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
-      <section className="flex min-h-0 flex-1 flex-col gap-4 lg:grid lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-6">
-        <Card className="flex min-h-0 flex-col overflow-hidden border-border/70 bg-card/90 shadow-sm">
-          <CardHeader className="gap-2.5 pb-3 sm:gap-3 sm:pb-4">
-            <Badge
-              variant="outline"
-              className="w-fit border-emerald-700/15 bg-emerald-50 text-emerald-900"
-            >
-              BC Baby Handbook
-            </Badge>
-            <div className="overflow-hidden rounded-2xl border border-border/70 bg-white/70 p-3">
-              <img
-                src="/BC.png"
-                alt="Baby's Best Chance"
-                className="h-auto w-full"
-              />
+    <main className="mx-auto flex h-svh w-full max-w-6xl flex-col overflow-hidden px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:px-6 sm:pt-5 sm:pb-[calc(1.25rem+env(safe-area-inset-bottom))] lg:h-dvh lg:px-8">
+      <section className="flex min-h-0 flex-1 flex-col gap-3 lg:grid lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-6">
+        <Card
+          className={
+            mobileMenuOpen
+              ? 'shrink-0 overflow-hidden border-border/70 bg-card/90 shadow-sm lg:flex lg:min-h-0 lg:flex-col'
+              : 'shrink-0 overflow-hidden border-border/70 bg-card/90 py-3 shadow-sm lg:flex lg:min-h-0 lg:flex-col lg:py-4'
+          }
+        >
+          <CardHeader
+            className={
+              mobileMenuOpen
+                ? 'gap-2.5 pb-3 sm:gap-3 sm:pb-4'
+                : 'gap-2.5 pb-0 sm:gap-3 sm:pb-4'
+            }
+          >
+            <div className="flex items-center justify-between gap-3">
+              <Badge
+                variant="outline"
+                className="min-w-0 max-w-full border-emerald-700/15 bg-emerald-50 text-emerald-900"
+              >
+                BC - Baby&apos;s Best Chance
+              </Badge>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="shrink-0 cursor-pointer lg:hidden"
+                onClick={() => setMobileMenuOpen((open) => !open)}
+              >
+                {mobileMenuOpen ? (
+                  <>
+                    Hide
+                    <ChevronUp className="size-4" />
+                  </>
+                ) : (
+                  <>
+                    Info
+                    <ChevronDown className="size-4" />
+                  </>
+                )}
+              </Button>
             </div>
-            <CardTitle className="font-serif text-2xl tracking-tight sm:text-3xl">
-              Ask the handbook
-            </CardTitle>
-            <CardDescription className="text-sm leading-5 sm:leading-6">
-              Ask questions about pregnancy, birth, feeding, baby care, and
-              recovery in plain language.
-            </CardDescription>
+            <div className={mobileMenuOpen ? 'space-y-3 lg:space-y-4' : 'hidden lg:block lg:space-y-4'}>
+              <div className="overflow-hidden rounded-2xl border border-border/70 bg-white/70 p-3">
+                <img
+                  src="/BC.png"
+                  alt="Baby's Best Chance"
+                  className="h-auto w-full"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <CardTitle className="font-serif text-2xl tracking-tight sm:text-3xl">
+                  Ask the handbook
+                </CardTitle>
+                <CardDescription className="text-sm leading-5 sm:leading-6">
+                  Ask questions about pregnancy, birth, feeding, baby care, and
+                  recovery in plain language.
+                </CardDescription>
+              </div>
+            </div>
           </CardHeader>
           <CardContent className="hidden min-h-0 flex-1 overflow-y-auto space-y-5 lg:block">
             <div className="space-y-2">
@@ -128,16 +170,16 @@ function App() {
           </CardContent>
         </Card>
 
-        <Card className="flex min-h-0 flex-col overflow-hidden border-border/70 bg-card/92 shadow-sm">
+        <Card className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden border-border/70 bg-card/92 shadow-sm">
           <CardHeader className="gap-1.5 pb-2 sm:gap-2 sm:pb-3">
             <div className="flex items-center justify-between gap-3">
-              <div>
+              <div className="min-w-0">
                 <CardTitle>Chat</CardTitle>
                 <CardDescription className="mt-0.5">
                   Answers are based on the handbook.
                 </CardDescription>
               </div>
-              <Badge variant="outline" className="capitalize">
+              <Badge variant="outline" className="shrink-0 capitalize">
                 {status}
               </Badge>
             </div>
@@ -148,12 +190,6 @@ function App() {
               className="min-h-0 flex-1 rounded-2xl border border-border bg-background/70"
             >
               <div className="flex min-h-full flex-col gap-4 p-4">
-                {messages.length === 0 ? (
-                  <div className="flex h-full min-h-[320px] items-center justify-center rounded-2xl border border-dashed border-border bg-card/60 px-6 text-center text-sm leading-6 text-muted-foreground">
-                    Ask a question whenever you&apos;re ready.
-                  </div>
-                ) : null}
-
                 {messages.map((message) => {
                   const text = getMessageText(message.parts)
 
@@ -166,11 +202,7 @@ function App() {
                   return (
                     <div
                       key={message.id}
-                      className={
-                        isUser
-                          ? 'ml-auto w-full max-w-2xl'
-                          : 'mr-auto w-full max-w-3xl'
-                      }
+                      className={isUser ? 'ml-auto w-full max-w-2xl min-w-0' : 'mr-auto w-full max-w-3xl min-w-0'}
                     >
                       <div
                         className={
@@ -219,14 +251,14 @@ function App() {
                     submitMessage(input)
                   }
                 }}
-                placeholder="Ask a question about pregnancy, birth, feeding, or baby care..."
-                className="min-h-24 resize-none rounded-2xl border-border bg-background px-4 py-3 text-sm leading-6 sm:min-h-28"
+                placeholder="Ask a question"
+                className="min-h-24 resize-none rounded-2xl border-border bg-background px-4 py-3 text-base leading-6 sm:min-h-28"
               />
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-xs text-muted-foreground">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <p className="min-w-0 text-xs text-muted-foreground">
                   Press Enter to send. Use Shift+Enter for a new line.
                 </p>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center justify-end gap-2">
                   {busy ? (
                     <Button type="button" variant="outline" onClick={() => stop()}>
                       <Square className="size-4" />
