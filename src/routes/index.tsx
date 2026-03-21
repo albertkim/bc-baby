@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { createFileRoute } from '@tanstack/react-router'
 import { DefaultChatTransport } from 'ai'
@@ -34,6 +34,8 @@ function getMessageText(parts: Array<{ type: string; text?: string }>) {
 
 function App() {
   const [input, setInput] = useState('')
+  const scrollAreaRef = useRef<HTMLDivElement | null>(null)
+  const previousBusyRef = useRef(false)
 
   const transport = useMemo(
     () =>
@@ -51,6 +53,23 @@ function App() {
   const { messages, sendMessage, status, stop, error } = useChat({ transport })
   const busy = status !== 'ready'
 
+  useEffect(() => {
+    if (!busy && previousBusyRef.current) {
+      const viewport = scrollAreaRef.current?.querySelector(
+        '[data-slot="scroll-area-viewport"]',
+      )
+
+      if (viewport instanceof HTMLElement) {
+        viewport.scrollTo({
+          top: viewport.scrollHeight,
+          behavior: 'smooth',
+        })
+      }
+    }
+
+    previousBusyRef.current = busy
+  }, [busy, messages])
+
   function submitMessage(text: string) {
     const value = text.trim()
 
@@ -63,44 +82,42 @@ function App() {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8">
-      <section className="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
-        <Card className="border-border/70 bg-card/90 shadow-sm">
-          <CardHeader className="gap-3">
+    <main className="mx-auto flex h-dvh w-full max-w-6xl flex-col overflow-hidden px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
+      <section className="flex min-h-0 flex-1 flex-col gap-4 lg:grid lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-6">
+        <Card className="flex min-h-0 flex-col overflow-hidden border-border/70 bg-card/90 shadow-sm">
+          <CardHeader className="gap-2.5 pb-3 sm:gap-3 sm:pb-4">
             <Badge
               variant="outline"
               className="w-fit border-emerald-700/15 bg-emerald-50 text-emerald-900"
             >
               BC Baby Handbook
             </Badge>
-            <CardTitle className="font-serif text-3xl tracking-tight">
+            <div className="overflow-hidden rounded-2xl border border-border/70 bg-white/70 p-3">
+              <img
+                src="/BC.png"
+                alt="Baby's Best Chance"
+                className="h-auto w-full"
+              />
+            </div>
+            <CardTitle className="font-serif text-2xl tracking-tight sm:text-3xl">
               Ask the handbook
             </CardTitle>
-            <CardDescription className="text-sm leading-6">
-              Minimal handbook chat over the cleaned Baby&apos;s Best Chance
-              chapters. The app picks a few source files from metadata, reads
-              them, and answers from those excerpts.
+            <CardDescription className="text-sm leading-5 sm:leading-6">
+              Ask questions about pregnancy, birth, feeding, baby care, and
+              recovery in plain language.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-5">
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Corpus: 17 handbook files</p>
-              <p>
-                Selection: router model over <code>content/metadata.json</code>
-              </p>
-              <p>Answering: selected Markdown files only</p>
-            </div>
-            <Separator />
+          <CardContent className="hidden min-h-0 flex-1 overflow-y-auto space-y-5 lg:block">
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                Try asking
+                Try one of these
               </p>
               <div className="flex flex-col gap-2">
                 {SUGGESTIONS.map((suggestion) => (
                   <button
                     key={suggestion}
                     type="button"
-                    className="rounded-xl border border-border bg-background px-3 py-3 text-left text-sm leading-5 text-foreground transition hover:border-emerald-700/20 hover:bg-emerald-50/70"
+                    className="cursor-pointer rounded-xl border border-border bg-background px-3 py-3 text-left text-sm leading-5 text-foreground transition hover:border-emerald-700/20 hover:bg-emerald-50/70"
                     onClick={() => submitMessage(suggestion)}
                   >
                     {suggestion}
@@ -111,13 +128,13 @@ function App() {
           </CardContent>
         </Card>
 
-        <Card className="flex min-h-[70vh] flex-col border-border/70 bg-card/92 shadow-sm">
-          <CardHeader className="gap-3">
+        <Card className="flex min-h-0 flex-col overflow-hidden border-border/70 bg-card/92 shadow-sm">
+          <CardHeader className="gap-1.5 pb-2 sm:gap-2 sm:pb-3">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <CardTitle>Chat</CardTitle>
-                <CardDescription>
-                  Answers should end with a source line naming the files used.
+                <CardDescription className="mt-0.5">
+                  Answers are based on the handbook.
                 </CardDescription>
               </div>
               <Badge variant="outline" className="capitalize">
@@ -125,14 +142,15 @@ function App() {
               </Badge>
             </div>
           </CardHeader>
-          <CardContent className="flex min-h-0 flex-1 flex-col gap-4">
-            <ScrollArea className="min-h-0 flex-1 rounded-2xl border border-border bg-background/70">
+          <CardContent className="flex min-h-0 flex-1 flex-col gap-2.5 sm:gap-3">
+            <ScrollArea
+              ref={scrollAreaRef}
+              className="min-h-0 flex-1 rounded-2xl border border-border bg-background/70"
+            >
               <div className="flex min-h-full flex-col gap-4 p-4">
                 {messages.length === 0 ? (
                   <div className="flex h-full min-h-[320px] items-center justify-center rounded-2xl border border-dashed border-border bg-card/60 px-6 text-center text-sm leading-6 text-muted-foreground">
-                    Ask a question about pregnancy, birth, baby care, feeding,
-                    or recovery and the app will pull the most relevant chapter
-                    files before answering.
+                    Ask a question whenever you&apos;re ready.
                   </div>
                 ) : null}
 
@@ -186,7 +204,7 @@ function App() {
             ) : null}
 
             <form
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-2"
               onSubmit={(event) => {
                 event.preventDefault()
                 submitMessage(input)
@@ -201,13 +219,12 @@ function App() {
                     submitMessage(input)
                   }
                 }}
-                placeholder="Ask a question about the handbook..."
-                className="min-h-28 resize-none rounded-2xl border-border bg-background px-4 py-3 text-sm leading-6"
+                placeholder="Ask a question about pregnancy, birth, feeding, or baby care..."
+                className="min-h-24 resize-none rounded-2xl border-border bg-background px-4 py-3 text-sm leading-6 sm:min-h-28"
               />
-              <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center justify-between gap-2">
                 <p className="text-xs text-muted-foreground">
-                  Minimal flow: metadata pick, file read, answer from selected
-                  chapters.
+                  Press Enter to send. Use Shift+Enter for a new line.
                 </p>
                 <div className="flex items-center gap-2">
                   {busy ? (
