@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { createFileRoute } from '@tanstack/react-router'
 import { DefaultChatTransport } from 'ai'
-import { ArrowUp, ChevronDown, ChevronUp, LoaderCircle, Square } from 'lucide-react'
+import { ArrowUp, ChevronDown, ChevronUp, LoaderCircle } from 'lucide-react'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import {
@@ -22,6 +22,9 @@ const SUGGESTIONS = [
   'How can I tell if I am in labour?',
   'What does the handbook say about safe sleep for my baby?',
 ]
+
+const WELCOME_MESSAGE =
+  'Ask me anything about pregnancy, birth, feeding, baby care, or recovery. I answer using content from Baby\'s Best Chance.'
 
 function getMessageText(parts: Array<{ type: string; text?: string }>) {
   return parts
@@ -50,7 +53,7 @@ function App() {
     [],
   )
 
-  const { messages, sendMessage, status, stop, error } = useChat({ transport })
+  const { messages, sendMessage, status, error } = useChat({ transport })
   const busy = status !== 'ready'
 
   function scrollToBottom(behavior: ScrollBehavior) {
@@ -93,14 +96,14 @@ function App() {
           className={
             mobileMenuOpen
               ? 'shrink-0 overflow-hidden border-border/70 bg-card/90 shadow-sm lg:flex lg:min-h-0 lg:flex-col'
-              : 'shrink-0 overflow-hidden border-border/70 bg-card/90 py-3 shadow-sm lg:flex lg:min-h-0 lg:flex-col lg:py-4'
+              : 'shrink-0 overflow-hidden border-border/70 bg-card/90 py-0 shadow-sm lg:flex lg:min-h-0 lg:flex-col lg:py-4'
           }
         >
           <CardHeader
             className={
               mobileMenuOpen
                 ? 'gap-2.5 pb-3 sm:gap-3 sm:pb-4'
-                : 'gap-2.5 pb-0 sm:gap-3 sm:pb-4'
+                : 'grid-rows-[auto] gap-0 pt-3 pb-3 sm:gap-3 sm:pb-4'
             }
           >
             <div className="flex items-center justify-between gap-3">
@@ -146,6 +149,18 @@ function App() {
                   Ask questions about pregnancy, birth, feeding, baby care, and
                   recovery in plain language.
                 </CardDescription>
+                <p className="text-sm leading-5 text-muted-foreground">
+                  Download the full handbook from{' '}
+                  <a
+                    href="https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline decoration-current underline-offset-2"
+                  >
+                    HealthLink BC
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </CardHeader>
@@ -171,25 +186,28 @@ function App() {
         </Card>
 
         <Card className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden border-border/70 bg-card/92 shadow-sm">
-          <CardHeader className="gap-1.5 pb-2 sm:gap-2 sm:pb-3">
-            <div className="flex items-center justify-between gap-3">
-              <div className="min-w-0">
-                <CardTitle>Chat</CardTitle>
-                <CardDescription className="mt-0.5">
-                  Answers are based on the handbook.
-                </CardDescription>
-              </div>
-              <Badge variant="outline" className="shrink-0 capitalize">
-                {status}
-              </Badge>
-            </div>
-          </CardHeader>
           <CardContent className="flex min-h-0 flex-1 flex-col gap-2.5 sm:gap-3">
             <ScrollArea
               ref={scrollAreaRef}
-              className="min-h-0 flex-1 rounded-2xl border border-border bg-background/70"
+              className="min-h-0 flex-1"
             >
               <div className="flex min-h-full flex-col gap-4 p-4">
+                <div className="mr-auto w-full max-w-[85%] min-w-0 sm:max-w-[78%]">
+                  <div className="rounded-3xl rounded-bl-md border border-border bg-background/55 px-4 py-3 text-sm leading-6 text-foreground shadow-sm">
+                    <div className="mb-2 text-[11px] font-medium uppercase tracking-[0.18em] opacity-70">
+                      Handbook
+                    </div>
+                    <div className="mb-3 overflow-hidden rounded-2xl border border-border/70 bg-white/70 p-2">
+                      <img
+                        src="/babys-best-chance-cover.png"
+                        alt="Baby's Best Chance handbook cover"
+                        className="h-auto w-full rounded-xl"
+                      />
+                    </div>
+                    <div className="whitespace-pre-wrap">{WELCOME_MESSAGE}</div>
+                  </div>
+                </div>
+
                 {messages.map((message) => {
                   const text = getMessageText(message.parts)
 
@@ -202,13 +220,17 @@ function App() {
                   return (
                     <div
                       key={message.id}
-                      className={isUser ? 'ml-auto w-full max-w-2xl min-w-0' : 'mr-auto w-full max-w-3xl min-w-0'}
+                      className={
+                        isUser
+                          ? 'ml-auto w-full max-w-[85%] min-w-0 sm:max-w-[72%]'
+                          : 'mr-auto w-full max-w-[85%] min-w-0 sm:max-w-[78%]'
+                      }
                     >
                       <div
                         className={
                           isUser
                             ? 'rounded-3xl rounded-br-md bg-emerald-900 px-4 py-3 text-sm leading-6 text-white shadow-sm'
-                            : 'rounded-3xl rounded-bl-md border border-border bg-card px-4 py-3 text-sm leading-6 text-foreground shadow-sm'
+                            : 'rounded-3xl rounded-bl-md border border-border bg-background/55 px-4 py-3 text-sm leading-6 text-foreground shadow-sm'
                         }
                       >
                         <div className="mb-2 text-[11px] font-medium uppercase tracking-[0.18em] opacity-70">
@@ -242,37 +264,33 @@ function App() {
                 submitMessage(input)
               }}
             >
-              <Textarea
-                value={input}
-                onChange={(event) => setInput(event.currentTarget.value)}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter' && !event.shiftKey) {
-                    event.preventDefault()
-                    submitMessage(input)
-                  }
-                }}
-                placeholder="Ask a question"
-                className="min-h-24 resize-none rounded-2xl border-border bg-background px-4 py-3 text-base leading-6 sm:min-h-28"
-              />
+              <div className="flex items-end gap-2">
+                <Textarea
+                  value={input}
+                  onChange={(event) => setInput(event.currentTarget.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' && !event.shiftKey) {
+                      event.preventDefault()
+                      submitMessage(input)
+                    }
+                  }}
+                  placeholder="Ask a question"
+                  className="min-h-0 flex-1 resize-none rounded-2xl border-border bg-background px-4 py-3 text-base leading-6"
+                  rows={1}
+                />
+                <Button
+                  type="submit"
+                  disabled={busy || input.trim().length === 0}
+                  className="h-[50px] shrink-0 rounded-2xl px-4"
+                >
+                  <ArrowUp className="size-4" />
+                  Ask
+                </Button>
+              </div>
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <p className="min-w-0 text-xs text-muted-foreground">
                   Press Enter to send. Use Shift+Enter for a new line.
                 </p>
-                <div className="flex items-center justify-end gap-2">
-                  {busy ? (
-                    <Button type="button" variant="outline" onClick={() => stop()}>
-                      <Square className="size-4" />
-                      Stop
-                    </Button>
-                  ) : null}
-                  <Button
-                    type="submit"
-                    disabled={busy || input.trim().length === 0}
-                  >
-                    <ArrowUp className="size-4" />
-                    Ask
-                  </Button>
-                </div>
               </div>
             </form>
           </CardContent>
