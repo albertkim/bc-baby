@@ -1,204 +1,96 @@
-Welcome to your new TanStack Start app! 
+# BC - Baby's Best Chance
 
-# Getting Started
+A simple chat interface for the BC *Baby's Best Chance* handbook.
 
-To run this application:
+## Why This Exists
+
+I am a new parent in British Columbia and wanted an easier way to reference the primary source material.
+
+Physical copies of *Baby's Best Chance* are no longer easy to get, and the PDF version is hard to read on a phone. This project turns the handbook into a small chat app so it is faster to search, easier to use on mobile, and still grounded in the original handbook content.
+
+## What It Does
+
+- Splits the handbook into cleaned Markdown files by major section
+- Generates metadata for those sections
+- Lets a user ask a question in chat
+- Selects the most relevant handbook files
+- Answers from those handbook excerpts
+
+The goal is not generic parenting advice. The goal is quick access to the handbook itself.
+
+## Source Handbook
+
+The full handbook can be downloaded from HealthLink BC:
+
+[Baby's Best Chance: Parents' Handbook of Pregnancy and Baby Care](https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and)
+
+## Stack
+
+- TanStack Start
+- React
+- shadcn/ui
+- AI SDK
+- Vercel AI Gateway
+
+## Content Structure
+
+- [content](/Users/albertkim/Documents/GitHub/bc-baby/content): cleaned handbook sections as Markdown
+- [content/metadata.json](/Users/albertkim/Documents/GitHub/bc-baby/content/metadata.json): file metadata used for routing
+- [scripts/generate-metadata.mjs](/Users/albertkim/Documents/GitHub/bc-baby/scripts/generate-metadata.mjs): regenerates metadata from the content files
+
+## How Retrieval Works
+
+This app does not use embeddings or a vector database.
+
+Instead:
+
+1. The user asks a question.
+2. The app looks at `content/metadata.json`.
+3. A small model picks the most relevant handbook files.
+4. The app loads those files.
+5. The answer model responds using only those selected excerpts.
+
+## Local Development
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Run the app:
+
+```bash
 npm run dev
 ```
 
-# Building For Production
-
-To build this application for production:
+Build for production:
 
 ```bash
 npm run build
 ```
 
-## Testing
-
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
-
-```bash
-npm run test
-```
-
-## Styling
-
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-### Removing Tailwind CSS
-
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `npm install @tailwindcss/vite tailwindcss -D`
-
-## Linting & Formatting
-
-
-This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
+Lint:
 
 ```bash
 npm run lint
-npm run format
-npm run check
 ```
 
+Regenerate metadata after content changes:
 
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
+```bash
+npm run generate:metadata
 ```
 
-Then anywhere in your JSX you can use it like so:
+## Environment
 
-```tsx
-<Link to="/about">About</Link>
+Create a `.env` file with:
+
+```bash
+AI_GATEWAY_API_KEY=your_key_here
 ```
 
-This will create a link that will navigate to the `/about` route.
+## Notes
 
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+- The handbook content is bundled into the production build so deployment does not rely on local filesystem reads.
+- The UI is optimized for phone use because that was a primary motivation for the project.

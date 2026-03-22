@@ -5,6 +5,8 @@ import { buildSourceContext, getConfigError } from '#/lib/content.server'
 
 export const maxDuration = 30
 const ANSWER_MODEL = 'openai/gpt-5.4-mini'
+const MAX_MESSAGE_LENGTH = 4000
+const MAX_CONTEXT_MESSAGES = 10
 
 function getLatestQuestion(messages: UIMessage[]) {
   const latestUserMessage = [...messages]
@@ -33,10 +35,15 @@ export const Route = createFileRoute('/api/chat')({
         }
 
         const { messages }: { messages: UIMessage[] } = await request.json()
-        const question = getLatestQuestion(messages)
+        const recentMessages = messages.slice(-MAX_CONTEXT_MESSAGES)
+        const question = getLatestQuestion(recentMessages)
 
         if (!question) {
           return new Response('Missing user question.', { status: 400 })
+        }
+
+        if (question.length > MAX_MESSAGE_LENGTH) {
+          return new Response('Message is too long.', { status: 400 })
         }
 
         const { context, sources } = await buildSourceContext(question)
@@ -61,7 +68,7 @@ Selected sources: ${sourceList}
         const result = streamText({
           model: ANSWER_MODEL,
           system: systemPrompt,
-          messages: await convertToModelMessages(messages),
+          messages: await convertToModelMessages(recentMessages),
         })
 
         return result.toUIMessageStreamResponse({
