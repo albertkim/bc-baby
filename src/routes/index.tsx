@@ -55,7 +55,7 @@ function App() {
   )
 
   const { messages, sendMessage, status, error } = useChat({ transport })
-  const busy = status !== 'ready'
+  const busy = status === 'submitted' || status === 'streaming'
 
   function scrollToBottom(behavior: ScrollBehavior) {
     const viewport = scrollAreaRef.current?.querySelector(
@@ -220,11 +220,18 @@ function App() {
                       Handbook
                     </div>
                     <div className="mb-3 overflow-hidden rounded-2xl border border-border/70 bg-white/70 p-2">
-                      <img
-                        src="/babys-best-chance-cover.png"
-                        alt="Baby's Best Chance handbook cover"
-                        className="h-auto w-full rounded-xl"
-                      />
+                      <a
+                        href="https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block cursor-pointer"
+                      >
+                        <img
+                          src="/babys-best-chance-cover.png"
+                          alt="Baby's Best Chance handbook cover"
+                          className="h-auto w-full rounded-xl"
+                        />
+                      </a>
                     </div>
                     <Streamdown>{WELCOME_MESSAGE}</Streamdown>
                   </div>
