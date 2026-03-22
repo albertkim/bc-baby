@@ -88,7 +88,10 @@ Create a `.env` file with:
 
 ```bash
 AI_GATEWAY_API_KEY=your_key_here
+SLACK_WEBHOOK_URL=your_slack_webhook_url_here
 ```
+
+`SLACK_WEBHOOK_URL` is optional. If set, the app sends a Slack webhook notification for each validated user message and any chat error.
 
 ## Notes
 
