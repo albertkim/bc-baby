@@ -3,6 +3,7 @@ import { useChat } from '@ai-sdk/react'
 import { createFileRoute } from '@tanstack/react-router'
 import { DefaultChatTransport } from 'ai'
 import { ArrowUp, ChevronDown, ChevronUp, LoaderCircle } from 'lucide-react'
+import { Streamdown } from 'streamdown'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import {
@@ -182,6 +183,27 @@ function App() {
                 ))}
               </div>
             </div>
+            <div className="pt-3 text-xs leading-5 text-muted-foreground/80">
+              <p>Albert Kim</p>
+              <p>
+                <a
+                  href="mailto:albert275@gmail.com"
+                  className="underline decoration-current underline-offset-2"
+                >
+                  albert275@gmail.com
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/albert-kim-84a6169b/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline decoration-current underline-offset-2"
+                >
+                  LinkedIn
+                </a>
+              </p>
+            </div>
           </CardContent>
         </Card>
 
@@ -204,7 +226,7 @@ function App() {
                         className="h-auto w-full rounded-xl"
                       />
                     </div>
-                    <div className="whitespace-pre-wrap">{WELCOME_MESSAGE}</div>
+                    <Streamdown>{WELCOME_MESSAGE}</Streamdown>
                   </div>
                 </div>
 
@@ -236,7 +258,11 @@ function App() {
                         <div className="mb-2 text-[11px] font-medium uppercase tracking-[0.18em] opacity-70">
                           {isUser ? 'You' : 'Handbook'}
                         </div>
-                        <div className="whitespace-pre-wrap">{text}</div>
+                        {isUser ? (
+                          <div className="whitespace-pre-wrap">{text}</div>
+                        ) : (
+                          <Streamdown isAnimating={busy}>{text}</Streamdown>
+                        )}
                       </div>
                     </div>
                   )
@@ -267,6 +293,7 @@ function App() {
               <div className="flex items-end gap-2">
                 <Textarea
                   value={input}
+                  onInput={(event) => setInput(event.currentTarget.value)}
                   onChange={(event) => setInput(event.currentTarget.value)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter' && !event.shiftKey) {
