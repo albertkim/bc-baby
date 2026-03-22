@@ -5,6 +5,7 @@ import { buildSourceContext, getConfigError } from '#/lib/content.server'
 
 export const maxDuration = 30
 const ANSWER_MODEL = 'openai/gpt-5.4-mini'
+const MIN_MESSAGE_LENGTH = 5
 const MAX_MESSAGE_LENGTH = 4000
 const MAX_CONTEXT_MESSAGES = 10
 
@@ -40,6 +41,10 @@ export const Route = createFileRoute('/api/chat')({
 
         if (!question) {
           return new Response('Missing user question.', { status: 400 })
+        }
+
+        if (question.length < MIN_MESSAGE_LENGTH) {
+          return new Response('Message is too short.', { status: 400 })
         }
 
         if (question.length > MAX_MESSAGE_LENGTH) {
