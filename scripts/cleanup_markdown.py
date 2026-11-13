@@ -142,6 +142,9 @@ def reflow(text: str) -> str:
 def main() -> None:
     for path in sorted(CONTENT_DIR.glob("*.md")):
         original = path.read_text(encoding="utf-8")
+        # Fixed-width transcripts must keep their column and table alignment.
+        if "\n```text\n" in original:
+            continue
         cleaned = reflow(original)
         path.write_text(cleaned, encoding="utf-8")
 

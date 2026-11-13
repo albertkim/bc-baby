@@ -2,6 +2,7 @@ import { generateText, Output } from 'ai'
 import { z } from 'zod'
 
 import { handbookModel } from './models.server'
+import { HANDBOOKS } from './handbooks'
 
 const bundledMetadata = import.meta.glob<string>(
   '../../content/metadata.json',
@@ -20,6 +21,9 @@ const bundledMarkdown = import.meta.glob<string>('../../content/*.md', {
 
 const metadataEntrySchema = z.object({
   id: z.string(),
+  handbookId: z.enum(['baby', 'toddler']),
+  startPage: z.number().int().positive(),
+  endPage: z.number().int().positive(),
   title: z.string(),
   path: z.string(),
   summary: z.string(),
@@ -98,10 +102,14 @@ async function pickSourceIds(
       timeout: 20_000,
       output: Output.object({ schema: pickResultSchema }),
       prompt: [
-        'Pick the most relevant handbook files for answering the user question.',
-        'Return only 2 to 4 file ids.',
+        'Pick the most relevant sections from the two BC parenting handbooks for answering the current question.',
+        'Return 1 to 4 file ids, using either or both books as appropriate.',
+        'Use the child’s age and topic from the conversation. The current question takes priority if the age or topic changes.',
+        'The books overlap at 6–12 months. Do not treat them as mutually exclusive.',
+        'If age is unknown and changes the guidance, include relevant age-specific sections so the answer can ask for clarification.',
         'Use the metadata exactly as given.',
         'Prefer the fewest files needed to answer well.',
+        `Handbooks: ${JSON.stringify(HANDBOOKS)}`,
         '',
         `Question: ${question}`,
         '',
@@ -124,11 +132,16 @@ async function pickSourceIds(
     )
   }
 
-  return metadata
+  const ranked = metadata
     .map((entry) => ({ entry, score: scoreFallback(question, entry) }))
     .sort((left, right) => right.score - left.score)
-    .slice(0, 3)
-    .map(({ entry }) => entry.id)
+  // A routing outage must not silently exclude one of the overlapping books.
+  return Object.keys(HANDBOOKS).flatMap((handbookId) =>
+    ranked
+      .filter(({ entry }) => entry.handbookId === handbookId)
+      .slice(0, 2)
+      .map(({ entry }) => entry.id),
+  )
 }
 
 export async function buildSourceContext(
@@ -142,11 +155,15 @@ export async function buildSourceContext(
     .filter((entry): entry is MetadataEntry => Boolean(entry))
   const sources = selectedEntries.map(readSource)
   const context = sources
-    .map((source) =>
-      [`## ${source.title}`, `File: ${source.path}`, source.content].join(
-        '\n\n',
-      ),
-    )
+    .map((source) => {
+      const book = HANDBOOKS[source.handbookId]
+      return [
+        `## ${book.title} — ${source.title}`,
+        `Edition: ${book.edition}. Scope: ${book.scope}`,
+        `Source: ${book.url}#page=${source.startPage} (PDF pages ${source.startPage}–${source.endPage})`,
+        source.content,
+      ].join('\n\n')
+    })
     .join('\n\n')
 
   return {

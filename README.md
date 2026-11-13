@@ -1,8 +1,8 @@
 # BC Baby
 
-A mobile-friendly chat app for British Columbia’s _Baby’s Best Chance_ handbook. Ask a question, get an answer from selected handbook excerpts, and see the source titles used.
+A mobile-friendly chat app for British Columbia’s _Baby’s Best Chance_ and _Toddler’s First Steps_ handbooks, covering pregnancy, babies, and children through 36 months. Ask naturally: the app selects sections from either or both books, shows the selected books above each answer, and links the sections used below it. When age changes the guidance and has not been established, the assistant is instructed to ask.
 
-The handbook is published by the Government of British Columbia and Provincial Health Services Authority. Download the original from [HealthLink BC](https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and).
+The bundled sources are _Baby’s Best Chance_, 8th edition, updated in 2024, and _Toddler’s First Steps_, 4th edition, updated in 2024. The original PDFs are included in the repository. The toddler PDF was downloaded from HealthLink BC on November 13, 2026. Book titles, editions, scopes, covers, and official PDF links are defined in `src/lib/handbooks.ts`.
 
 ## Development
 
@@ -24,7 +24,7 @@ Open http://localhost:3000. Questions can contain 5–4,000 characters. Enter se
 
 Both source selection and answer generation use `openai/gpt-6-luna` through Vercel AI Gateway, with medium reasoning set explicitly in `src/lib/models.server.ts`.
 
-Source selection uses the metadata for the handbook sections to choose up to four files. If selection fails or returns no valid IDs, local keyword search selects three sections. Answers stream from those excerpts. The app uses no embeddings or vector database.
+Source selection uses metadata to choose up to four sections across both books, considering age and prior user questions in the bounded conversation. If selection fails or returns no valid IDs, local keyword search selects two sections from each book so neither is excluded. Answers stream from those excerpts. Selected-book labels come from server message metadata, independently of generated answer text. The app uses no embeddings or vector database.
 
 Handbook Markdown and metadata are bundled into the server build, so production needs no source checkout or runtime filesystem access. After editing handbook sections, regenerate metadata:
 
@@ -32,7 +32,9 @@ Handbook Markdown and metadata are bundled into the server build, so production 
 npm run generate:metadata
 ```
 
-The Python extraction scripts are offline tools for reprocessing the original PDF. The app does not execute them or require a Python environment. The extraction script uses `pypdf`.
+The Python extraction scripts are offline tools. The app does not execute them or require Python. They require `pypdf`; `scripts/extract_layout_sections.py` also requires Poppler’s `pdftotext`. Run that script after any legacy baby extraction to regenerate all toddler notes and the repaired baby development section, then regenerate metadata. It preserves page layout, column alignment, numbers, and check/cross symbols in fixed-width transcripts rather than reflowing age tables into prose.
+
+Toddler notes include PDF pages 10–146: introduction, all five care sections, resources, and Canada’s Food Guide. Front matter, the index, and the back cover are omitted. Text transcripts do not capture illustrations; links open the original PDFs at the relevant physical page. Other existing baby sections retain their earlier extraction format.
 
 ## Verification
 

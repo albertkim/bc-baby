@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
-import { HANDBOOK_URL } from './handbook-info'
+import { HANDBOOKS } from '#/lib/handbooks'
 
 const TOPICS = {
   baby: {
@@ -9,6 +9,14 @@ const TOPICS = {
       'How can my baby sleep safely?',
       'How do I know my baby is getting enough milk?',
       'What can I try when my baby cries?',
+    ],
+  },
+  toddler: {
+    label: 'Toddler',
+    questions: [
+      'What can I try when my 2-year-old has a tantrum?',
+      'How can I help my 18-month-old with picky eating?',
+      'How do I know if my toddler is ready to use the toilet?',
     ],
   },
   pregnancy: {
@@ -40,21 +48,27 @@ export function HandbookWelcome({
 
   return (
     <div className="handbook-welcome message-entry">
-      <a
-        href={HANDBOOK_URL}
-        target="_blank"
-        rel="noreferrer"
-        className="handbook-cover"
-      >
-        <img
-          src="/babys-best-chance-cover.png"
-          alt="Baby's Best Chance handbook cover"
-          width={2568}
-          height={1992}
-        />
-      </a>
+      <div className="handbook-covers">
+        {Object.values(HANDBOOKS).map((book) => (
+          <a
+            key={book.title}
+            href={book.url}
+            target="_blank"
+            rel="noreferrer"
+            className="handbook-cover"
+          >
+            <img
+              src={book.cover}
+              alt={`${book.title} handbook cover`}
+              width={774}
+              height={603}
+            />
+            <span>{book.title}</span>
+          </a>
+        ))}
+      </div>
       <h2>What’s on your mind?</h2>
-      <p className="welcome-subtitle">Ask the handbook</p>
+      <p className="welcome-subtitle">Ask the handbooks</p>
       <fieldset className="question-topics">
         <legend className="sr-only">Question topics</legend>
         {(Object.keys(TOPICS) as Topic[]).map((value) => (

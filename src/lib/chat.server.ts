@@ -2,12 +2,14 @@ import { convertToModelMessages, safeValidateUIMessages, streamText } from 'ai'
 import { z } from 'zod'
 import { buildSourceContext } from './content.server'
 import {
+  type HandbookMessage,
   getMessageText,
   MAX_CONTEXT_MESSAGES,
   MAX_QUESTION_LENGTH,
   MIN_QUESTION_LENGTH,
 } from './chat'
 import { handbookModel } from './models.server'
+import { HANDBOOKS } from './handbooks'
 import { getRequestMetadata, notify } from './notifications.server'
 
 // Bound the full request as well as the most recent question.
@@ -93,7 +95,6 @@ export async function handleChat(request: Request): Promise<Response> {
     const earlierQuestions = messages
       .slice(0, -1)
       .filter((message) => message.role === 'user')
-      .slice(-2)
       .map(getMessageText)
     const retrievalQuestion = earlierQuestions.length
       ? `Earlier questions:\n${earlierQuestions.join('\n')}\n\nCurrent question:\n${question}`
@@ -102,10 +103,20 @@ export async function handleChat(request: Request): Promise<Response> {
       retrievalQuestion,
       signal,
     )
-    const sourceList = sources.map((source) => source.title).join('; ')
+    const sourceList = sources
+      .map((source) => {
+        const book = HANDBOOKS[source.handbookId]
+        return `[${book.title} — ${source.title}](${book.url}#page=${source.startPage})`
+      })
+      .join('; ')
     const instructions = `
-You are a helpful assistant who helps new parents in British Columbia with their pregnancy and baby care.
-You answer questions using only the provided Baby's Best Chance handbook excerpts, which is published by the Government of British Columbia and Provincial Health Services Authority.
+You help parents and caregivers in British Columbia with pregnancy, baby care, and toddler care through 36 months.
+Answer using only the provided excerpts from Baby’s Best Chance (8th edition, updated in 2024) and Toddler’s First Steps (4th edition, updated in 2024), published by BC’s public health organizations.
+
+Automatically use either or both handbooks according to the question. Never ask the user to choose a handbook.
+Use the child’s age if established in the conversation. If age changes the advice and is unknown, ask one short question about their age before giving age-specific guidance. Do not assume that the word “baby” or “toddler” establishes an exact age.
+Keep advice tied to the age range in the source. Do not apply toddler guidance to a newborn or merge guidance for different ages. Page transcripts may preserve tables using fixed-width columns: read each age label with its own column or row. If a table’s associations are unclear, do not guess.
+When guidance overlaps, use the relevant excerpts together. If excerpts conflict, explain the difference rather than silently choosing. Previous assistant answers are conversation context, not evidence.
 
 If the answer is not in the provided excerpts, say so plainly.
 Do not invent medical advice or supplement the excerpts with unsupported claims.
@@ -114,9 +125,9 @@ Format responses in Markdown when it improves readability. Highlight important i
 You do not need to refer to the handbook or excerpt in your replies; just answer the question.
 Never offer things like "if you want i can" or similar clickbait. Just answer the question.
 
-You were developed by Albert Kim, a new parent in British Columbia. The app helps other new parents in the province who want to easily reference the Baby's Best Chance handbook as a primary source of information.
+You were developed by Albert Kim, a parent in British Columbia. BC Baby makes the province’s pregnancy, baby, and toddler handbooks easier to use.
 
-End every answer with a single line that starts with "Sources:" followed by the source titles you relied on.
+End every substantive answer with a single line starting with "Sources:" followed by the supplied Markdown links for only the sections you relied on. Include the handbook name and section title. Use the exact URLs supplied. A clarification question alone does not need a source line.
 
 Selected handbook excerpts:
 ${context}
@@ -131,8 +142,16 @@ Selected sources: ${sourceList}
       abortSignal: signal,
       timeout: 45_000,
     })
-    return result.toUIMessageStreamResponse({
+    return result.toUIMessageStreamResponse<HandbookMessage>({
       sendReasoning: false,
+      messageMetadata: ({ part }) =>
+        part.type === 'start'
+          ? {
+              handbookIds: [
+                ...new Set(sources.map((source) => source.handbookId)),
+              ],
+            }
+          : undefined,
       onError: reportError,
     })
   } catch (error) {
