@@ -78,26 +78,25 @@ export function HandbookChat() {
 
   return (
     <main className="handbook-app">
-      <HandbookInfo />
-      <section aria-label="Handbook chat" className="handbook-chat">
+      <HandbookInfo>
         {messages.length > 0 ? (
-          <header className="chat-heading">
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              disabled={busy}
-              onClick={() => {
-                setMessages([])
-                clearError()
-                setInput('')
-                followOutputRef.current = false
-              }}
-            >
-              New chat
-            </Button>
-          </header>
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            disabled={busy}
+            onClick={() => {
+              setMessages([])
+              clearError()
+              setInput('')
+              followOutputRef.current = false
+            }}
+          >
+            New chat
+          </Button>
         ) : null}
+      </HandbookInfo>
+      <section aria-label="Handbook chat" className="handbook-chat">
         <div
           ref={viewportRef}
           className="conversation-viewport"

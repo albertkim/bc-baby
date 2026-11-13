@@ -118,6 +118,11 @@ pre code {
   justify-content: space-between;
   gap: 16px;
 }
+.handbook-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .handbook-masthead h1 {
   display: flex;
   align-items: center;
@@ -135,7 +140,7 @@ pre code {
   border-radius: 50%;
   background: #78a8a8;
 }
-.info-trigger {
+.handbook-actions > button {
   min-height: 36px;
   padding: 8px 10px;
   border-radius: 9px;
@@ -258,17 +263,6 @@ pre code {
   min-height: 0;
   flex: 1;
   flex-direction: column;
-}
-.chat-heading {
-  display: flex;
-  height: 36px;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 16px;
-  padding: 0 4px;
-  color: var(--muted-foreground);
-  font-size: 13px;
 }
 .conversation-viewport {
   min-height: 0;
@@ -487,16 +481,11 @@ pre code {
   .handbook-masthead h1 {
     font-size: 20px;
   }
-  .info-trigger {
+  .handbook-actions > button {
     font-size: 12px;
   }
   .about-dialog {
     padding: 28px 24px;
-  }
-  .chat-heading {
-    height: 30px;
-    padding: 0 0 5px;
-    font-size: 12px;
   }
   .conversation-viewport {
     padding: 20px 0 24px;
