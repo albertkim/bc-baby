@@ -141,29 +141,117 @@ pre code {
   border-radius: 9px;
   font-size: 13px;
 }
-.handbook-details {
-  display: grid;
-  grid-template-columns: 128px 1fr auto;
-  align-items: center;
-  gap: 12px 24px;
-  max-height: 35dvh;
+.about-overlay {
+  position: fixed;
+  z-index: 40;
+  inset: 0;
+  background: #173b4045;
+  backdrop-filter: blur(3px);
+}
+.about-overlay[data-state='open'] {
+  animation: about-fade-in 180ms ease-out;
+}
+.about-overlay[data-state='closed'] {
+  animation: about-fade-out 140ms ease-in;
+}
+.about-dialog {
+  position: fixed;
+  z-index: 50;
+  top: 50%;
+  left: 50%;
+  width: min(440px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
   overflow-y: auto;
-  padding: 4px 0 22px;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  padding: 32px;
+  background: #fff;
+  color: var(--foreground);
+  box-shadow: 0 20px 70px #15383d24;
+}
+.about-dialog[data-state='open'] {
+  animation: about-open 200ms ease-out;
+}
+.about-dialog[data-state='closed'] {
+  animation: about-close 140ms ease-in;
+}
+.about-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 8px;
   color: var(--muted-foreground);
-  font-size: 13px;
-  line-height: 1.6;
 }
-.handbook-details p {
+.about-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 0 28px;
+}
+.about-title {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+}
+.about-description {
   margin: 0;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.7;
 }
-.handbook-details a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.about-handbook-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 13px 16px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 150ms ease;
 }
-.handbook-maker {
-  grid-column: 2 / -1;
-  font-size: 12px;
+.about-handbook-link:hover {
+  background: #c4dfdd;
 }
+.about-contact {
+  margin-top: 28px;
+  border-top: 1px solid #e6edeb;
+  padding-top: 18px;
+  font-size: 13px;
+}
+.about-contact p {
+  margin: 0 0 10px;
+}
+.about-contact > div {
+  display: flex;
+  gap: 8px;
+}
+.about-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 7px;
+  padding: 7px 11px;
+  background: #f0f6f4;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: background 150ms ease;
+}
+.about-contact a:hover {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+.about-dialog a:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 4px;
+}
+
 .handbook-chat {
   display: flex;
   min-width: 0;
@@ -402,14 +490,8 @@ pre code {
   .info-trigger {
     font-size: 12px;
   }
-  .handbook-details {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    max-height: 32dvh;
-    padding: 0 0 18px;
-  }
-  .handbook-maker {
-    grid-column: auto;
+  .about-dialog {
+    padding: 28px 24px;
   }
   .chat-heading {
     height: 30px;
@@ -475,12 +557,6 @@ pre code {
 .collapsible-content[data-state='closed'] {
   animation: collapse-panel 160ms ease-in;
 }
-.info-chevron {
-  transition: transform 200ms ease;
-}
-.info-trigger[data-state='open'] .info-chevron {
-  transform: rotate(180deg);
-}
 @keyframes message-in {
   from {
     opacity: 0;
@@ -509,6 +585,43 @@ pre code {
   to {
     height: 0;
     opacity: 0;
+  }
+}
+
+@keyframes about-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes about-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes about-open {
+  from {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 8px)) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes about-close {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 4px)) scale(0.98);
   }
 }
 
