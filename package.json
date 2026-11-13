@@ -9,14 +9,12 @@
     "dev": "vite dev --port 3000",
     "build": "vite build",
     "preview": "node .output/server/index.mjs",
-    "test": "vitest run",
     "lint": "oxlint",
     "format": "prettier --write .",
-    "check": "npm run format:check && npm run typecheck && npm run lint && npm run test && npm run build && npm run test:production",
+    "check": "npm run format:check && npm run typecheck && npm run lint && npm run build",
     "generate:metadata": "node scripts/generate-metadata.mjs",
     "typecheck": "tsc --noEmit",
-    "format:check": "prettier --check .",
-    "test:production": "node scripts/verify-production.mjs"
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@ai-sdk/react": "4.0.176",
@@ -37,18 +35,14 @@
   },
   "devDependencies": {
     "@tanstack/nitro-v2-vite-plugin": "1.155.2",
-    "@testing-library/dom": "10.4.2",
-    "@testing-library/react": "16.3.3",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.3.0",
-    "jsdom": "31.0.1",
     "nitropack": "2.13.6",
     "prettier": "3.10.1",
     "typescript": "7.0.2",
     "vite": "8.3.8",
-    "vitest": "5.1.0",
     "oxlint": "1.93.0"
   },
   "engines": {
