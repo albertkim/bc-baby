@@ -45,7 +45,7 @@ try {
   assert.ok(response, `Production server did not start: ${logs}`)
   assert.equal(response.status, 200)
   const html = await response.text()
-  assert.match(html, /How can I tell if I am in labour/)
+  assert.match(html, /How can my baby sleep safely/)
   assert.match(html, /<textarea/)
   assert.doesNotMatch(logs, /Error|ERR_MODULE_NOT_FOUND/)
 

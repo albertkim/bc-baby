@@ -84,6 +84,7 @@ it('lets the reader retry a failed request without duplicating their question', 
     .mockImplementationOnce(async () => answer())
   vi.stubGlobal('fetch', fetch)
   render(<HandbookChat />)
+  fireEvent.click(screen.getByRole('button', { name: /^Pregnancy$/ }))
   fireEvent.click(
     screen.getByRole('button', { name: 'How can I tell if I am in labour?' }),
   )
@@ -122,6 +123,7 @@ it('stops a pending response and can start a new conversation', async () => {
     ),
   )
   render(<HandbookChat />)
+  fireEvent.click(screen.getByRole('button', { name: /^Pregnancy$/ }))
   fireEvent.click(
     screen.getByRole('button', { name: 'How can I tell if I am in labour?' }),
   )
@@ -129,7 +131,7 @@ it('stops a pending response and can start a new conversation', async () => {
   await screen.findByRole('button', { name: /^Ask$/ })
   fireEvent.click(screen.getByRole('button', { name: 'New chat' }))
   expect(
-    screen.getByRole('button', { name: 'How can I tell if I am in labour?' }),
+    screen.getByRole('button', { name: 'How can my baby sleep safely?' }),
   ).toBeDefined()
   expect(screen.queryByLabelText('Your question')).toBeNull()
   expect(screen.queryByRole('alert')).toBeNull()
