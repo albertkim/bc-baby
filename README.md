@@ -1,99 +1,66 @@
-# BC - Baby's Best Chance
+# BC Baby
 
-A simple chat interface for the BC *Baby's Best Chance* handbook.
+A mobile-friendly chat app for British Columbia’s _Baby’s Best Chance_ handbook. Ask a question, get an answer from selected handbook excerpts, and see the source titles used.
 
-## Why This Exists
+The handbook is published by the Government of British Columbia and Provincial Health Services Authority. Download the original from [HealthLink BC](https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and).
 
-I am a new parent in British Columbia and wanted an easier way to reference the primary source material.
+## Development
 
-Physical copies of *Baby's Best Chance* are no longer easy to get, and the PDF version is hard to read on a phone. This project turns the handbook into a small chat app so it is faster to search, easier to use on mobile, and still grounded in the original handbook content.
+Use Node.js 26 and npm. Install the locked dependencies:
 
-## What It Does
-
-- Splits the handbook into cleaned Markdown files by major section
-- Generates metadata for those sections
-- Lets a user ask a question in chat
-- Selects the most relevant handbook files
-- Answers from those handbook excerpts
-
-The goal is not generic parenting advice. The goal is quick access to the handbook itself.
-
-## Source Handbook
-
-The full handbook can be downloaded from HealthLink BC:
-
-[Baby's Best Chance: Parents' Handbook of Pregnancy and Baby Care](https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and)
-
-## Stack
-
-- TanStack Start
-- React
-- shadcn/ui
-- AI SDK
-- Vercel AI Gateway
-
-## Content Structure
-
-- [content](/Users/albertkim/Documents/GitHub/bc-baby/content): cleaned handbook sections as Markdown
-- [content/metadata.json](/Users/albertkim/Documents/GitHub/bc-baby/content/metadata.json): file metadata used for routing
-- [scripts/generate-metadata.mjs](/Users/albertkim/Documents/GitHub/bc-baby/scripts/generate-metadata.mjs): regenerates metadata from the content files
-
-## How Retrieval Works
-
-This app does not use embeddings or a vector database.
-
-Instead:
-
-1. The user asks a question.
-2. The app looks at `content/metadata.json`.
-3. A small model picks the most relevant handbook files.
-4. The app loads those files.
-5. The answer model responds using only those selected excerpts.
-
-## Local Development
-
-Install dependencies:
-
-```bash
-npm install
+```sh
+npm ci
 ```
 
-Run the app:
+Copy `.env.example` to `.env` and set `AI_GATEWAY_API_KEY` to a Vercel AI Gateway key. `SLACK_WEBHOOK_URL` is optional; leave it empty when testing so synthetic questions do not send notifications.
 
-```bash
+```sh
 npm run dev
 ```
 
-Build for production:
+Open http://localhost:3000. Questions can contain 5–4,000 characters. Enter sends a question; Shift+Enter inserts a new line. A response can be stopped or retried after an error. Conversation history lives in the current browser session and resets on reload.
 
-```bash
-npm run build
-```
+## Models and retrieval
 
-Lint:
+Both source selection and answer generation use `openai/gpt-6-luna` through Vercel AI Gateway, with medium reasoning set explicitly in `src/lib/models.server.ts`.
 
-```bash
-npm run lint
-```
+Source selection uses the metadata for the handbook sections to choose up to four files. If selection fails or returns no valid IDs, local keyword search selects three sections. Answers stream from those excerpts. The app uses no embeddings or vector database.
 
-Regenerate metadata after content changes:
+Handbook Markdown and metadata are bundled into the server build, so production needs no source checkout or runtime filesystem access. After editing handbook sections, regenerate metadata:
 
-```bash
+```sh
 npm run generate:metadata
 ```
 
-## Environment
+The Python extraction scripts are offline tools for reprocessing the original PDF. The app does not execute them or require a Python environment. The extraction script uses `pypdf`.
 
-Create a `.env` file with:
+## Verification
 
-```bash
-AI_GATEWAY_API_KEY=your_key_here
-SLACK_WEBHOOK_URL=your_slack_webhook_url_here
+```sh
+npm run check
 ```
 
-`SLACK_WEBHOOK_URL` is optional. If set, the app sends a Slack webhook notification for each validated user message and any chat error.
+This checks formatting, TypeScript, linting, the automated tests, a production build, and a smoke check against the built server. Tests cover request validation, bundled retrieval and its fallback, chat streaming, follow-up messages, retry, and keyboard input. External model requests are mocked; tests require no credentials or paid calls.
 
-## Notes
+To run the production build locally:
 
-- The handbook content is bundled into the production build so deployment does not rely on local filesystem reads.
-- The UI is optimized for phone use because that was a primary motivation for the project.
+```sh
+npm run build
+npm run preview
+```
+
+The preview server needs `AI_GATEWAY_API_KEY` in its process environment; it does not load `.env` automatically. Vite loads `.env` during local development. Never give server secrets a `VITE_` prefix.
+
+## Deployment
+
+The repository is configured for TanStack Start on Vercel with Node.js 26. Set `AI_GATEWAY_API_KEY` in the appropriate Vercel environments. Add `SLACK_WEBHOOK_URL` only where notifications are wanted. Keep it unset in previews used for synthetic verification.
+
+```sh
+NITRO_PRESET=vercel npm run build
+```
+
+This produces Vercel’s Build Output API artifacts in `.vercel/output`. The server function allows 60 seconds; source selection has a 20-second timeout and answer generation a 45-second timeout, with a shared 55-second deadline. Validate an actual deployment’s streaming and timeout behavior before promotion.
+
+The stable Nitro 2 adapter is intentional: Nitro 3 currently publishes a release candidate and the project avoids release candidates and nightlies. All direct dependencies use exact stable versions, with transitive versions recorded in `package-lock.json`.
+
+`npm audit --omit=dev` checks production dependencies. At the November 2026 migration, production dependencies had no reported vulnerabilities. The stable build adapter still brings low/moderate advisories through `deepmerge` and `minimatch`; no compatible upstream fix is currently offered. These are build-tool dependencies, not imported by application request handlers. Recheck the full audit when updating the adapter.

@@ -77,7 +77,9 @@ function normalizeWhitespace(value) {
 function collectKeywords(...parts) {
   const combined = parts.join(' ').toLowerCase()
   const words = combined.match(/[a-z][a-z'-]+/g) ?? []
-  return [...new Set(words.filter((word) => word.length > 2 && !STOPWORDS.has(word)))].slice(0, 18)
+  return [
+    ...new Set(words.filter((word) => word.length > 2 && !STOPWORDS.has(word))),
+  ].slice(0, 18)
 }
 
 function getSummary(lines) {
@@ -102,7 +104,11 @@ async function main() {
     const filePath = path.join(CONTENT_DIR, filename)
     const content = await readFile(filePath, 'utf8')
     const lines = content.split('\n')
-    const title = lines.find((line) => line.startsWith('# '))?.replace(/^# /, '').trim() ?? filename
+    const title =
+      lines
+        .find((line) => line.startsWith('# '))
+        ?.replace(/^# /, '')
+        .trim() ?? filename
     const headings = lines
       .filter((line) => /^##+\s+/.test(line))
       .map((line) => line.replace(/^##+\s+/, '').trim())
