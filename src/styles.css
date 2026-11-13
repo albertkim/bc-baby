@@ -176,14 +176,11 @@ pre code {
   height: 36px;
   flex-shrink: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
   padding: 0 4px;
   color: var(--muted-foreground);
   font-size: 13px;
-}
-.chat-heading p {
-  margin: 0;
 }
 .conversation-viewport {
   min-height: 0;
@@ -236,12 +233,19 @@ pre code {
   transform: rotate(0deg) translateY(-2px);
 }
 .handbook-welcome h2 {
-  margin: 0 0 25px;
+  margin: 0 0 8px;
   font-size: clamp(1.85rem, 8.4vw, 2.375rem);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -1.1px;
 }
+.welcome-subtitle {
+  margin: 0 0 24px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .question-topics {
   min-width: 0;
   border: 0;
@@ -446,8 +450,8 @@ pre code {
   .handbook-cover img {
     width: 105px;
   }
-  .handbook-welcome h2 {
-    margin-bottom: 18px;
+  .welcome-subtitle {
+    margin-bottom: 16px;
   }
   .question-topics {
     margin-bottom: 12px;

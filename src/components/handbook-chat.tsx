@@ -80,9 +80,8 @@ export function HandbookChat() {
     <main className="handbook-app">
       <HandbookInfo />
       <section aria-label="Handbook chat" className="handbook-chat">
-        <header className="chat-heading">
-          <p>Ask the handbook</p>
-          {messages.length > 0 ? (
+        {messages.length > 0 ? (
+          <header className="chat-heading">
             <Button
               type="button"
               variant="ghost"
@@ -97,8 +96,8 @@ export function HandbookChat() {
             >
               New chat
             </Button>
-          ) : null}
-        </header>
+          </header>
+        ) : null}
         <div
           ref={viewportRef}
           className="conversation-viewport"

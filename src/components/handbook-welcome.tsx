@@ -54,6 +54,7 @@ export function HandbookWelcome({
         />
       </a>
       <h2>What’s on your mind?</h2>
+      <p className="welcome-subtitle">Ask the handbook</p>
       <fieldset className="question-topics">
         <legend className="sr-only">Question topics</legend>
         {(Object.keys(TOPICS) as Topic[]).map((value) => (
