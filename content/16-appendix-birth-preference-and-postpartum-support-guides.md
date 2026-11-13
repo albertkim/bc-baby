@@ -2,7 +2,9 @@
 
 _Source pages: 157-164_
 
-### Birth Preference Guide
+_Handbook: Baby’s Best Chance, 8th edition, updated in 2024._
+
+## Birth Preference Guide
 
 This guide is for those who would like to share their birth preferences.
 
@@ -32,7 +34,6 @@ Everyone’s labour and birth experiences are unique. Sometimes, what was expect
 - Home.
 - Birth house or birth centre location:
 - Other:
-
 - How have you prepared for your labour in a specific way? (For example, prenatal classes, newborn classes, breastfeeding or chestfeeding classes, hypnotherapy, apps, researching on your own, ceremony, other cultural ways of preparing with aunties or Elders, etc). Please share as much as you would like so we can support you.
 
 #### Labour and delivery preferences
@@ -54,7 +55,6 @@ Everyone’s labour and birth experiences are unique. Sometimes, what was expect
 - For me after birth:
 - For my baby:
 - Other:
-
 - Are you planning to have a water birth? Yes / No
 - The following person(s) should NOT be allowed at my labour and birth:
 - Are there any of these or others that are really important to you that we can support you with:
@@ -139,7 +139,6 @@ For more information on newborn tests and procedures, visit:
 
 - `www.bcwomens.ca/our-services/labour-birth-post-birth-care/after-the-birth/newborn-tests-and-procedures`
 - `www.perinatalservicesbc.ca/our-services/screening-programs/newborn-screening-bc`
-
 - Erythromycin eye ointment (antibiotic)
 - Vitamin K for blood clotting
 - Blood test for newborn screening (metabolic disorders) & bilirubin (jaundice)
@@ -170,7 +169,7 @@ Labour and birth can be a very emotional time. If you have experienced trauma an
 
 **Is there anything else that you would like to share with your care team?**
 
-### Postpartum Support Guide
+## Postpartum Support Guide
 
 As you prepare to welcome your baby into the world, it is important to think about what comes after the birth — this is called the postpartum period. This is a time of changes and new beginnings for you and your family. A postpartum guide may help you and your family plan ahead for the weeks and months following birth.
 

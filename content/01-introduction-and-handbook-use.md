@@ -2,6 +2,8 @@
 
 _Source pages: 10-12_
 
+_Handbook: Baby’s Best Chance, 8th edition, updated in 2024._
+
 ## Introduction
 
 Welcome to the 8th edition of _Baby’s Best Chance: Parents’ and Caregivers’ Handbook of Pregnancy and Baby Care_, published by the Government of British Columbia and Provincial Health Services Authority.
@@ -35,23 +37,23 @@ _Baby’s Best Chance_ is divided into 6 main sections:
 
 We’ve also included a number of additional pieces that can help you navigate the book:
 
-**Looking for insight into a particular topic or information on a key word?**
+### Looking for insight into a particular topic or information on a key word?
 
 Turn to the Table of Contents on pages 1 and 2 or the Index on page 167.
 
-**Need information on the services and supports available to help you and your family thrive?**
+### Need information on the services and supports available to help you and your family thrive?
 
 See the Resources section on page 125.
 
-**Not sure what a word or concept means?**
+### Not sure what a word or concept means?
 
 Check the What is…? boxes that appear throughout the book.
 
-**Interested in information on healthy eating?**
+### Interested in information on healthy eating?
 
 See Canada’s food guide on page 148.
 
-**Want to speak with a health care professional in person?**
+### Want to speak with a health care professional in person?
 
 Phone HealthLink BC, an invaluable free service of the Government of British Columbia. Call `8-1-1` toll-free or `7-1-1` for the deaf and hard of hearing. Services are available in 130 languages, 24 hours a day. Speak with a registered nurse (anytime), a pharmacist (nightly, from 5 pm to 9 am), a registered dietitian or a qualified exercise professional (9 am to 5 pm, Monday to Friday).
 

@@ -3,7 +3,7 @@ export const HANDBOOKS = {
     title: 'Baby’s Best Chance',
     edition: '8th edition, updated in 2024',
     scope:
-      'Pregnancy, birth, postpartum recovery, and baby care in the first year.',
+      'Pregnancy, birth, postpartum recovery, and early baby care, with feeding guidance extending into later infancy.',
     url: 'https://www.healthlinkbc.ca/sites/default/files/documents/babys-best-chance.pdf',
     cover: '/babys-best-chance-cover.png',
   },

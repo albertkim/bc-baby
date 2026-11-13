@@ -4,362 +4,317 @@ _Source pages: 68-74_
 
 _Handbook: Toddler’s First Steps, 4th edition, updated in 2024._
 
-The following page transcripts retain the source’s columns and tables. Read age labels with their corresponding columns or rows. Illustrations are available in the original PDF.
+## Your Toddler’s Growth
 
-## PDF page 68: Your Toddler’s Growth, Learning and Health; Your Toddler’s Growth; Typical Growth for a Toddler; What You Can Do
+Children come in different shapes and sizes. Your toddler may be shorter or taller, lighter or heavier than other children their age. But changes in their height and weight will generally follow a regular pattern that’s right for them.
 
-```text
-     YOUR TODDLER’S GROWTH, LEARNING AND HEALTH
+### Typical Growth for a Toddler
 
-     Your Toddler’s Growth
-      Children come in different shapes and sizes. Your toddler may be shorter or taller, lighter or heavier   What You Can Do
-      than other children their age. But changes in their height and weight will generally follow a regular
-      pattern that’s right for them.                                                                           Growing too fast or too slowly can be a sign of
-                                                                                                               problems with feeding, stress or health.
+| Age                  | Typical growth                                                                                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 6 months             | Weighs twice as much as at birth; 55 to 57 cm (21½ to 22½ inches) long.                                                                                                               |
+| 12 months            | Weighs 2½ to 3 times as much as at birth; 25 cm (10 inches) longer than at birth.                                                                                                     |
+| 12 to 24 months      | Gains 1½ to 2½ kg (3 to 5 lb); grows 7 to 12 cm (3 to 5 inches); has more muscle in their arms and legs; has less fat around their face and tummy; starts to look like a young child. |
+| 24 months to 5 years | Gains 1½ to 2½ kg (3 to 5 lb) per year; grows about 8 cm (3 inches) per year.                                                                                                         |
 
-                                                                                                               You can help your toddler grow well by:
-      Typical Growth for a Toddler
-                                                                                                               ✔ breastfeeding or chestfeeding until they’re
-                                                                                                                 2 years or older
-                                                                                                               ✔ giving them opportunities to be physically
-                                                                                                                 active every day
-                                                                                                               ✔ having regular family mealtimes and regular
-                                                                                                                 snack times instead of “grazing” all day
-                                                                                                               ✔ providing healthy food choices, then
-                                                                                                                 letting your toddler decide how much they
-                                                                                                                 want to eat
-                                                                                                               ✔ setting a good example by eating well and
-                                                                                                                 being active
-                                                                                                               ✔ having them weighed and measured
-                                                                                                                 whenever they visit a health care provider
-      Months          6                                   24                                  60
-                                                                                                               ✘ limiting sugary drinks and other highly
-                                                                                                                 processed foods
-                                                                                                               ✘ not pressuring your toddler to eat
-      6 months                                12 to 24 months                         24 months to 5 years
-                                                                                                               ✘ not using food as a reward
-      • weighs twice as much as at birth      • gains 1½ to 2½ kg (3 to 5 lb)         • gains 1½ to 2½ kg
-                                                                                        (3 to 5 lb) per year   ✘ limiting screen time
-      • 55 to 57 cm (21½ to 22½ inches)       • grows 7 to 12 cm
-        long                                    (3 to 5 inches)                       • grows about 8 cm
-                                              • has more muscle in their arms           (3 inches) per year
-      12 months                                 and legs
-      • weighs 2½ to 3 times as much          • has less fat around their face
-        as at birth                             and tummy
-      • 25 cm (10 inches) longer than         • starts to look like a young child
-        at birth
+> Source ambiguity (PDF page 68): the original chart lists a length of 55 to 57 cm at 6 months. This value is preserved as printed, not independently verified or corrected; do not use it as a verified growth target.
 
-64    Your Toddler’s Growth, Learning and Health • Your Toddler’s Growth                                                                    Toddler’s First Steps
-```
+**What you can do**
 
-## PDF page 69: Physical Activity; Benefits of Being Active; Activities to Try
+Growing too fast or too slowly can be a sign of problems with feeding, stress or health.
 
-```text
-YOUR TODDLER’S GROWTH, LEARNING AND HEALTH
+You can help your toddler grow well by:
 
-Physical Activity
- Benefits of Being Active                             Activities to Try
-                                                                                                                          FAMILY STORY
- Regular physical activity is key to your toddler’s   From 6 to 12 months, play with your child
-                                                                                                                           My partner and I knew our
- growth and good health. It:                          on the floor several times a day. Try:
-                                                                                                                daughter would copy what we did. So
- ✔ builds strong muscles and bones                    • continuing regular tummy times                          we started going for an outing every
- ✔ strengthens their heart and lungs                  • putting toys just out of your child’s reach             night after work. When she was small,
- ✔ teaches them new skills like throwing                so they have to work to get them                        we would put her in the stroller. As she
-   and kicking                                        • playing physical games, like peekaboo                   got older, she would walk with us. It was
-                                                        and patty cake                                          a great time to reconnect while getting
- ✔ builds their confidence in walking,
-                                                                                                                fresh air and exercise.
-   climbing and balancing                             • choosing toys that get your child to move
- ✔ gives them energy                                  From 12 to 36 months, help your child get at
- ✔ improves their posture                             least 3 hours of various activities throughout                      FAMILY STORY
- ✔ lowers their stress                                the day. Try:
-                                                                                                                           We lived in a small condo. By
-                                                      • going outside to explore                                evening we were just too tired to take our
-                                                      • throwing a ball                                         son to the park again, but he needed more
-            HOW TO
-                                                      • jumping                                                 activity. So we set up a small slide in the
-            Encourage physical activity
-                                                                                                                living room. He loved it!
-                                                      • chasing bubbles
-   ✔ Try different activities together.
-                                                      • using the slide, swings and climbing gear
-   ✔ Create safe spaces indoors and outdoors
-                                                        at the park
-     for them to crawl, roll and explore.
-     (See Childproofing Your Home)                    • including them in active tasks like walking to
-                                                        the store, cleaning the house, washing the
-   ✔ Praise their efforts.
-                                                        car and gardening
-   ✔ Plan activities with other families.
-                                                      • having them walk rather than ride in a stroller
-   ✔ Limit their screen time. (See Screen Time)
-                                                      • swimming and doing other activities at your
-   ✔ Spend time outdoors.                               recreation centre
-   ✔ Be physically active yourself.
-                                                      From age 3 on, give your child at least 3 hours
-                                                      of activity each day. Have them spend at least
-                                                      1 of the 3 hours in energetic play.
+- breastfeeding or chestfeeding until they’re 2 years or older
+- giving them opportunities to be physically active every day
+- having regular family mealtimes and regular snack times instead of “grazing” all day
+- providing healthy food choices, then letting your toddler decide how much they want to eat
+- setting a good example by eating well and being active
+- having them weighed and measured whenever they visit a health care provider
+- limiting sugary drinks and other highly processed foods
+- not pressuring your toddler to eat
+- not using food as a reward
+- limiting screen time
 
+## Physical Activity
 
+### Benefits of Being Active
 
+Regular physical activity is key to your toddler’s growth and good health. It:
 
- Toddler’s First Steps                                                                           Your Toddler’s Growth, Learning and Health • Physical Activity   65
-```
+- builds strong muscles and bones
+- strengthens their heart and lungs
+- teaches them new skills like throwing and kicking
+- builds their confidence in walking, climbing and balancing
+- gives them energy
+- improves their posture
+- lowers their stress
 
-## PDF page 70: Sleep and Your Toddler; Typical Sleep Patterns for Babies and Toddlers
+### Encourage physical activity
 
-```text
-     YOUR TODDLER’S GROWTH, LEARNING AND HEALTH
+- Try different activities together.
+- Create safe spaces indoors and outdoors for them to crawl, roll and explore. (See Childproofing Your Home)
+- Praise their efforts.
+- Plan activities with other families.
+- Limit their screen time. (See Screen Time)
+- Spend time outdoors.
+- Be physically active yourself.
 
-     Sleep and Your Toddler
-      Healthy sleep habits are as important as healthy food when it comes to your child’s development.
+### Activities to Try
 
+From 6 to 12 months, play with your child on the floor several times a day. Try:
 
+- continuing regular tummy times
+- putting toys just out of your child’s reach so they have to work to get them
+- playing physical games, like peekaboo and patty cake
+- choosing toys that get your child to move
 
-      Typical Sleep Patterns for Babies and Toddlers
+From 12 to 36 months, help your child get at least 3 hours of various activities throughout the day. Try:
 
-      Months        6-12                                 12                         12-18                                 24                                  36
+- going outside to explore
+- throwing a ball
+- jumping
+- chasing bubbles
+- using the slide, swings and climbing gear at the park
+- including them in active tasks like walking to the store, cleaning the house, washing the car and gardening
+- having them walk rather than ride in a stroller
+- swimming and doing other activities at your recreation centre
 
+From age 3 on, give your child at least 3 hours of activity each day. Have them spend at least 1 of the 3 hours in energetic play.
 
-            12 to 16 hours total,                   14 hours total,          11 to 14 hours total            11 to 14 hours total                  12 hours at night
-            including naps                          including naps           No morning nap                  Afternoon nap of 1 to 2 hours         Short nap
-            2 naps (morning and afternoon)                                   Longer afternoon nap                                                  (an hour or less)
-            of 1 to 2 hours each
+**Family story**
 
+My partner and I knew our daughter would copy what we did. So we started going for an outing every night after work. When she was small, we would put her in the stroller. As she got older, she would walk with us. It was a great time to reconnect while getting fresh air and exercise.
 
+**Family story**
 
+We lived in a small condo. By evening we were just too tired to take our son to the park again, but he needed more activity. So we set up a small slide in the living room. He loved it!
 
-                 DID YOU KNOW?                                        HOW TO
-                 Many children continue to have a                     Develop good sleep habits
-        morning nap (as well as an afternoon nap)             Babies and toddlers thrive on routine – and routines around sleep are especially important.
-        until 18 months or older.
-                                                              ✔ Follow routines in the daytime, including regular meal and snack times.
-                                                              ✔ Keep a regular night-time and nap-time sleep schedule, even on weekends.
+## Sleep and Your Toddler
 
-                 TRY THIS                                     ✔ Ensure your child gets lots of physical activity during the day, but not right before bed.
+Healthy sleep habits are as important as healthy food when it comes to your child’s development.
 
-                 If your toddler has trouble going            ✔ Set a before-bed routine including a bath, a book and a quiet cuddle of 20 minutes or less.
-        to sleep or isn’t sleeping well, keep a sleep         ✔ Keep the sleep area quiet.
-        diary. Over a couple of weeks, write
-        down when they sleep and for how long.                ✘ Don’t give your toddler food or drinks with caffeine, like chocolate or pop.
-        Note any patterns, then experiment with               ✘ Be careful about too much screen time during the day (see Screen Time), and turn off screens
-        changes in nap times and routines.                      well before bedtime.
-        Make any changes gradually – just 5 to
-        10 minutes every second day.
+### Typical Sleep Patterns for Babies and Toddlers
 
+| Age          | Sleep pattern                                                                                |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| 6–12 months  | 12 to 16 hours total, including naps. Two naps (morning and afternoon) of 1 to 2 hours each. |
+| 12 months    | 14 hours total, including naps.                                                              |
+| 12–18 months | 11 to 14 hours total. No morning nap; longer afternoon nap.                                  |
+| 24 months    | 11 to 14 hours total. Afternoon nap of 1 to 2 hours.                                         |
+| 36 months    | 12 hours at night. Short nap (an hour or less).                                              |
 
+**Did you know?**
 
+Many children continue to have a morning nap (as well as an afternoon nap) until 18 months or older.
 
-66    Your Toddler’s Growth, Learning and Health • Sleep and Your Toddler                                                                        Toddler’s First Steps
-```
+#### Try this: keep a sleep diary
 
-## PDF page 71: Falling Asleep on Their Own; Waking in the Night; Safer Cribs
+If your toddler has trouble going to sleep or isn’t sleeping well, keep a sleep diary. Over a couple of weeks, write down when they sleep and for how long. Note any patterns, then experiment with changes in nap times and routines. Make any changes gradually – just 5 to 10 minutes every second day.
 
-```text
-Falling Asleep on Their Own                          Waking in the Night
-                                                                                                                        TRY THIS
-Your child may have gotten used to being             Your child may wake up during the night if
-                                                                                                                           If you have concerns, talk with your
-breastfed or chestfed or rocked to sleep when        they’re too hot or cold, if they’re wet, hungry,
-                                                     teething or sick – or for no reason at all. You can      health care provider or a public health nurse.
-they were a baby. But by learning to fall asleep
-                                                     help them learn to go back to sleep on their             They can screen for any issues that may make
-on their own, they’ll be able to settle themselves
-                                                     own by:                                                  it difficult for your toddler to sleep well.
-when they partially wake during the night.
-                                                     • keeping the lights off when you feed or
+### Develop good sleep habits
+
+Babies and toddlers thrive on routine – and routines around sleep are especially important.
+
+- Follow routines in the daytime, including regular meal and snack times.
+- Keep a regular night-time and nap-time sleep schedule, even on weekends.
+- Ensure your child gets lots of physical activity during the day, but not right before bed.
+- Set a before-bed routine including a bath, a book and a quiet cuddle of 20 minutes or less.
+- Keep the sleep area quiet.
+- Don’t give your toddler food or drinks with caffeine, like chocolate or pop.
+- Be careful about too much screen time during the day (see Screen Time), and turn off screens well before bedtime.
+
+### Falling Asleep on Their Own
+
+Your child may have gotten used to being breastfed or chestfed or rocked to sleep when they were a baby. But by learning to fall asleep on their own, they’ll be able to settle themselves when they partially wake during the night.
+
 Try:
-                                                       change them during the night
-✔ feeding them earlier in the bedtime routine                                                                          BRAIN BUILDER
-                                                     • not making nighttime a time for chatting or
-  (about 15 minutes before putting them into           playing                                                        Give your toddler some choices at
-  bed) so they don’t associate feeding
-                                                     • gradually shortening any nighttime feedings             bedtime, like which story to read or which
-  with sleep
-                                                       so they don’t fully wake up                             pajamas to wear.
-✔ setting a bedtime routine that includes
-  singing a song or reading a story                  If they cry for no particular reason, you can help
-                                                     them learn to settle themselves by:
-✔ putting them into bed awake, patting them
-                                                     1. going to them, but not picking them up                         DANGER
-  gently until they settle, then saying
-  goodnight and leaving                              2. calmly tucking them back into bed and telling                  If your toddler is under 12 months
-                                                        them it’s time to sleep                               old, always put them to sleep on their back
-✔ sitting in a chair close by the bed with your                                                               to lower the risk of Sudden Infant Death
-  hand on them if they have a hard time              3. leaving the room
-                                                                                                              Syndrome (SIDS).
-  settling, and moving the chair further away        4. repeating as needed until they fall asleep
-  each night
-                                                     You may choose to wait a short time – 2 or
-✔ using a nightlight in the corner or having a       3 minutes – after they start crying before going       Safer Cribs
-  light on just outside their room if they don’t     to them. If so, over several days you can slowly       Ensure:
-  like the dark                                      increase the amount of time you let them cry           • the crib is approved by Health Canada (ask a
-                                                     before going in. But always check on them right
-                                                                                                              health care provider if you’re not sure)
-                                                     away if they sound very upset and may be sick
-             FAMILY STORY                            or injured.                                            • the mattress is in the lowest position if your
-             We started reading to our                                                                        toddler is able to sit up
-  daughter right before bed when she                                                                        • there are no items they could climb on to fall
-  was a baby. It helped her slow down and                                                                     out of the crib
-  understand it was time to sleep. When she                                                                 • there are no mobiles or other hanging objects
-  was a toddler, she always wanted a story,                     DID YOU KNOW?
-                                                                                                              that could strangle them
-  so it got her into bed. Now, at 12, she likes                  If your child falls asleep somewhere
-  to read herself. But she still loves this close,     other than their own bed, they’re more               See Baby’s Best Chance for more information on
-  quiet time with one of us.                           likely to wake during the night.                     safer sleep for your 6-month-old.
 
+- feeding them earlier in the bedtime routine (about 15 minutes before putting them into bed) so they don’t associate feeding with sleep
+- setting a bedtime routine that includes singing a song or reading a story
+- putting them into bed awake, patting them gently until they settle, then saying goodnight and leaving
+- sitting in a chair close by the bed with your hand on them if they have a hard time settling, and moving the chair further away each night
+- using a nightlight in the corner or having a light on just outside their room if they don’t like the dark
 
+**Family story**
 
+We started reading to our daughter right before bed when she was a baby. It helped her slow down and understand it was time to sleep. When she was a toddler, she always wanted a story, so it got her into bed. Now, at 12, she likes to read herself. But she still loves this close, quiet time with one of us.
 
-Toddler’s First Steps                                                                     Your Toddler’s Growth, Learning and Health • Sleep and Your Toddler     67
-```
+### Waking in the Night
 
-## PDF page 72: Safer Beds; Bedsharing; Sleep-Related Infant Death
+Your child may wake up during the night if they’re too hot or cold, if they’re wet, hungry, teething or sick – or for no reason at all. You can help them learn to go back to sleep on their own by:
 
-```text
-     Safer Beds                                             Bedsharing
-                                                                                                                            DANGER
-     If your toddler is trying to climb out of the crib –                                                                   Never share a bed if:
-     or once they’re almost 3 feet tall – it’s time to       What is bedsharing?
-                                                                                                                   • your baby was born prematurely or
-     move them to a bed. Ensure your toddler’s bed:          Sleeping in the same bed with your child.               weighed less than 2½ kg (5½ lb) at birth, or
-     • has a simple design                                                                                         • you or your partner(s):
-     • has no spaces between the mattress and the           When your child is between 6 months and a                – smoke, or if you smoked while pregnant
-       headboard or walls                                   year old, the safest place for them to sleep is
-                                                                                                                     – have taken any substances that might
-                                                            in their own Health Canada-approved crib. But
-     • has its headboard (not the side of the bed)                                                                     make you sleep more heavily, like alcohol,
-                                                            many families prefer to bedshare for cultural or
-       against the wall                                                                                                medicine, cannabis or other drugs
-                                                            personal reasons. And some find that they end
-     • is low to the floor                                  up bedsharing, even if they hadn’t planned to.         Have another adult available to look after
-     • has a carpet or quilt on the floor in case they                                                             your child if you’re drinking alcohol or using
-                                                            Talk with your health care provider about how          any substances.
-       fall out of bed
-                                                            to balance your family’s wishes with the risks
-     • has safety rails on all sides                        of bedsharing. And if you do choose to share a
-     • is the lower bunk if using a bunk bed set            bed, do so as safely as possible. Ensure:
-     • isn’t by a window, if possible, and that all
-                                                                                                                 Sleep-Related Infant Death
-                                                             Your baby is far away from pillows, blankets
-       windows in the room have safety locks                  and duvets.                                        Sleep-related infant death can happen by
-                                                                                                                 accident (usually when a child is smothered
-                                                             Your baby is on their back.                        or suffocated) or by Sudden Infant Death
-                                                             They aren’t swaddled.                              Syndrome (SIDS or “crib death”) – the
-                                                             The mattress is on the floor to reduce the         unexplained death of a healthy child while
-                DANGER                                        risk of a fall.                                    sleeping. Lessen the risks by:
-               Portable bed rails can trap a child.          The mattress is firm. (No waterbeds,               • putting your baby down to sleep on their
-       Don’t use them if your child is under 2.               pillowtops, air mattresses or feather beds.)         back on a firm surface in their own safe sleep
-                                                                                                                   space
-                                                             The child is on the outside of the bed, not
-                                                              between adults.                                    • making your home smoke-free
-                 DID YOU KNOW?                               There’s space around the bed so the child          • keeping your child warm, but not hot
-                 If you have more than one baby,              can’t get trapped between the mattress and         • breastfeeding or chestfeeding
-       it’s safest to have them in their own sleep            the wall or a side table.
-                                                                                                                 • keeping pillows, toys, heavy blankets and pets
-       spaces. If they share the same crib, put
-                                                             The adults in the bed both know that the             out of your child’s bed
-       them head to head, not side by side.
-                                                              child is in the bed and are comfortable with it.
-                                                                                                                 • carefully considering the risks of bedsharing
-                                                             Any long hair is tied back so it can’t get
-                                                              wrapped around your child’s neck.
-                                                             No older children or pets are in the bed.
+- keeping the lights off when you feed or change them during the night
+- not making nighttime a time for chatting or playing
+- gradually shortening any nighttime feedings so they don’t fully wake up
 
+If they cry for no particular reason, you can help them learn to settle themselves by:
 
+1. going to them, but not picking them up
 
+2. calmly tucking them back into bed and telling them it’s time to sleep
 
-68   Your Toddler’s Growth, Learning and Health • Sleep and Your Toddler                                                                       Toddler’s First Steps
-```
+3. leaving the room
 
-## PDF page 73: Learning to Use the Toilet; Is Your Toddler Ready?; Keys to Toileting Success; What You’ll Need; Steps Along the Way
+4. repeating as needed until they fall asleep
 
-```text
-YOUR TODDLER’S GROWTH, LEARNING AND HEALTH
+You may choose to wait a short time – 2 or 3 minutes – after they start crying before going to them. If so, over several days you can slowly increase the amount of time you let them cry before going in. But always check on them right away if they sound very upset and may be sick or injured.
 
-Learning to Use the Toilet
- Is Your Toddler Ready?                              Keys to Toileting Success                              What You’ll Need
- Usually, children learn to use the toilet between   ✔ Choose the right time. Wait until your               • A potty chair. Place it next to the main toilet.
- ages 2 and 4.                                         toddler seems ready, and start when there are          Or use a special seat that fits over the toilet’s
-                                                       no other big changes going on in your family.          seat, along with a solid step stool.
- Your toddler is likely ready if they:
-                                                     ✔ Try not to pressure them. Most children              • Clothes with elastic waists that can be pulled
- • stay dry for a few hours at a time
-                                                       take between 2 weeks and 6 months to                   down quickly. You may even choose to let
- • sometimes wake up dry from a nap                    learn. Be patient and try not to be upset over         your toddler go without pants while at home.
- • can follow simple directions                        accidents.
- • know when they’re peeing or pooping               ✔ Make potty time a regular part of your
-                                                       routine. Have them sit on it as soon as they         Steps Along the Way
- • can let you know when they need to use
-                                                       wake up and regularly throughout the day.            Learning to use the toilet is a skill that takes
-   the toilet
-                                                     ✔ Praise their attempts. Try “Yay! You went pee        time to learn. Staying dry all night often
- • are able to pull down their pants and                                                                    doesn’t happen until a child is 6 years old or
-                                                       on the potty!” rather than “Good for you!” This
-   underwear by themself                                                                                    older. Sometimes your toddler may even take
-                                                       tells them that whether they succeed or not
-                                                       doesn’t make them good or bad in your eyes.          a step backward. And even older children have
-                                                                                                            accidents, especially when they’re sick, cold or
-                                                     ✔ Talk about the benefits of using the toilet,
-            KEY TAKEAWAY                                                                                    very involved in play.
-                                                       like getting “big kid” underwear.
-             Rushing toilet learning can make
-                                                     ✔ Be ready when you’re away from home.
-   it frustrating for you and your child. By                                                                Using diapers
-                                                       Know where you can find public bathrooms.
-   waiting until they’re ready, you’ll make it                                                              If your child is dealing with a big change or just
-                                                       And bring along the potty chair if you’re
-   easier and they’ll feel more successful.                                                                 won’t use the potty chair, you may need to go
-                                                       going on a trip.
-                                                                                                            back to diapers for a while.
-                                                     ✔ Use the right words. Talk to your toddler
-                                                       about toileting so they’ll have the words to         If your toddler doesn’t want to poop in a potty
-             DID YOU KNOW?                             express their needs. Use the correct terms for       chair or toilet, let them continue to use diapers
-            Many children are scared by                body parts and functions, and cut down on            for part of the day so they don’t get constipated.
-   the flushing of a toilet, so be sensitive           embarrassment by not using negative words
-   when you empty the potty. Toilets that              like “stinky.”
-                                                                                                            Using training pants
-   flush automatically and any toilet that’s
-   unfamiliar can be scary, too. Try bringing                                                               Pull-on training pants look like underwear but
-   the potty along when travelling or going                      TRY THIS                                   are made from diaper material. You may find
-   out until your child is comfortable using                      Encourage your toddler to teach           them useful at night or when you’re away from
-   the bathroom away from home.                        their stuffed animals to use the potty chair.        home with your toddler.
+**Did you know?**
 
+If your child falls asleep somewhere other than their own bed, they’re more likely to wake during the night.
 
+**Try this**
 
- Toddler’s First Steps                                                                 Your Toddler’s Growth, Learning and Health • Learning to Use the Toilet    69
-```
+If you have concerns, talk with your health care provider or a public health nurse. They can screen for any issues that may make it difficult for your toddler to sleep well.
 
-## PDF page 74
+**Brain builder**
 
-```text
-                BRAIN BUILDER
-                Give your child a book to look at
-       while they sit on the potty chair. Check the
-       library for books about toilet learning.
+Give your toddler some choices at bedtime, like which story to read or which pajamas to wear.
 
+**Danger**
 
+If your toddler is under 12 months old, always put them to sleep on their back to lower the risk of Sudden Infant Death Syndrome (SIDS).
 
-                 TRY THIS
-                 If you’re comfortable, let your
-       toddler watch you or another same-sex
-       parent or caregiver or sibling use the
-       toilet. Seeing what you’re doing can help
-       them figure it out for themselves.
+### Safer Cribs
 
+Ensure:
 
+- the crib is approved by Health Canada (ask a health care provider if you’re not sure)
+- the mattress is in the lowest position if your toddler is able to sit up
+- there are no items they could climb on to fall out of the crib
+- there are no mobiles or other hanging objects that could strangle them
 
-                 FAMILY STORY
-                 Right from birth, I said things
-       to my son like, “Doesn’t it feel good to be
-       dry?” So when it came time to start toilet
-       learning, he already understood the idea
-       of “wet” versus “dry.”
+See Baby’s Best Chance for more information on safer sleep for your 6-month-old.
 
+### Safer Beds
 
+If your toddler is trying to climb out of the crib – or once they’re almost 3 feet tall – it’s time to move them to a bed. Ensure your toddler’s bed:
 
+- has a simple design
+- has no spaces between the mattress and the headboard or walls
+- has its headboard (not the side of the bed) against the wall
+- is low to the floor
+- has a carpet or quilt on the floor in case they fall out of bed
+- has safety rails on all sides
+- is the lower bunk if using a bunk bed set
+- isn’t by a window, if possible, and that all windows in the room have safety locks
 
-70   Your Toddler’s Growth, Learning and Health • Learning to Use the Toilet   Toddler’s First Steps
-```
+**Danger**
+
+Portable bed rails can trap a child. Don’t use them if your child is under 2.
+
+**Did you know?**
+
+If you have more than one baby, it’s safest to have them in their own sleep spaces. If they share the same crib, put them head to head, not side by side.
+
+### Bedsharing
+
+#### What is bedsharing?
+
+Sleeping in the same bed with your child.
+
+When your child is between 6 months and a year old, the safest place for them to sleep is in their own Health Canada-approved crib. But many families prefer to bedshare for cultural or personal reasons. And some find that they end up bedsharing, even if they hadn’t planned to.
+
+Talk with your health care provider about how to balance your family’s wishes with the risks of bedsharing. And if you do choose to share a bed, do so as safely as possible. Ensure:
+
+- Your baby is far away from pillows, blankets and duvets.
+- Your baby is on their back.
+- They aren’t swaddled.
+- The mattress is on the floor to reduce the risk of a fall.
+- The mattress is firm. (No waterbeds, pillowtops, air mattresses or feather beds.)
+- The child is on the outside of the bed, not between adults.
+- There’s space around the bed so the child can’t get trapped between the mattress and the wall or a side table.
+- The adults in the bed both know that the child is in the bed and are comfortable with it.
+- Any long hair is tied back so it can’t get wrapped around your child’s neck.
+- No older children or pets are in the bed.
+
+**Danger**
+
+Never share a bed if:
+
+- your baby was born prematurely or weighed less than 2½ kg (5½ lb) at birth, or
+- you or your partner(s):
+  - smoke, or if you smoked while pregnant
+  - have taken any substances that might make you sleep more heavily, like alcohol, medicine, cannabis or other drugs
+
+Have another adult available to look after your child if you’re drinking alcohol or using any substances.
+
+### Sleep-Related Infant Death
+
+Sleep-related infant death can happen by accident (usually when a child is smothered or suffocated) or by Sudden Infant Death Syndrome (SIDS or “crib death”) – the unexplained death of a healthy child while sleeping. Lessen the risks by:
+
+- putting your baby down to sleep on their back on a firm surface in their own safe sleep space
+- making your home smoke-free
+- keeping your child warm, but not hot
+- breastfeeding or chestfeeding
+- keeping pillows, toys, heavy blankets and pets out of your child’s bed
+- carefully considering the risks of bedsharing
+
+## Learning to Use the Toilet
+
+### Is Your Toddler Ready?
+
+Usually, children learn to use the toilet between ages 2 and 4.
+
+Your toddler is likely ready if they:
+
+- stay dry for a few hours at a time
+- sometimes wake up dry from a nap
+- can follow simple directions
+- know when they’re peeing or pooping
+- can let you know when they need to use the toilet
+- are able to pull down their pants and underwear by themself
+
+**Key takeaway**
+
+Rushing toilet learning can make it frustrating for you and your child. By waiting until they’re ready, you’ll make it easier and they’ll feel more successful.
+
+**Did you know?**
+
+Many children are scared by the flushing of a toilet, so be sensitive when you empty the potty. Toilets that flush automatically and any toilet that’s unfamiliar can be scary, too. Try bringing the potty along when travelling or going out until your child is comfortable using the bathroom away from home.
+
+### Keys to Toileting Success
+
+- Choose the right time. Wait until your toddler seems ready, and start when there are no other big changes going on in your family.
+- Try not to pressure them. Most children take between 2 weeks and 6 months to learn. Be patient and try not to be upset over accidents.
+- Make potty time a regular part of your routine. Have them sit on it as soon as they wake up and regularly throughout the day.
+- Praise their attempts. Try “Yay! You went pee on the potty!” rather than “Good for you!” This tells them that whether they succeed or not doesn’t make them good or bad in your eyes.
+- Talk about the benefits of using the toilet, like getting “big kid” underwear.
+- Be ready when you’re away from home. Know where you can find public bathrooms. And bring along the potty chair if you’re going on a trip.
+- Use the right words. Talk to your toddler about toileting so they’ll have the words to express their needs. Use the correct terms for body parts and functions, and cut down on embarrassment by not using negative words like “stinky.”
+
+**Try this**
+
+Encourage your toddler to teach their stuffed animals to use the potty chair.
+
+### What You’ll Need
+
+- A potty chair. Place it next to the main toilet. Or use a special seat that fits over the toilet’s seat, along with a solid step stool.
+- Clothes with elastic waists that can be pulled down quickly. You may even choose to let your toddler go without pants while at home.
+
+### Steps Along the Way
+
+Learning to use the toilet is a skill that takes time to learn. Staying dry all night often doesn’t happen until a child is 6 years old or older. Sometimes your toddler may even take a step backward. And even older children have accidents, especially when they’re sick, cold or very involved in play.
+
+#### Using diapers
+
+If your child is dealing with a big change or just won’t use the potty chair, you may need to go back to diapers for a while.
+
+If your toddler doesn’t want to poop in a potty chair or toilet, let them continue to use diapers for part of the day so they don’t get constipated.
+
+#### Using training pants
+
+Pull-on training pants look like underwear but are made from diaper material. You may find them useful at night or when you’re away from home with your toddler.
+
+**Brain builder**
+
+Give your child a book to look at while they sit on the potty chair. Check the library for books about toilet learning.
+
+**Try this**
+
+If you’re comfortable, let your toddler watch you or another same-sex parent or caregiver or sibling use the toilet. Seeing what you’re doing can help them figure it out for themselves.
+
+**Family story**
+
+Right from birth, I said things to my son like, “Doesn’t it feel good to be dry?” So when it came time to start toilet learning, he already understood the idea of “wet” versus “dry.”

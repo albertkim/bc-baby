@@ -4,471 +4,193 @@ _Source pages: 59-67_
 
 _Handbook: Toddler’s First Steps, 4th edition, updated in 2024._
 
-The following page transcripts retain the source’s columns and tables. Read age labels with their corresponding columns or rows. Illustrations are available in the original PDF.
+## Safe, Healthy Foods and Drinks
 
-## PDF page 59: Safe, Healthy Foods and Drinks; Drinks
+### Water
 
-```text
-FEEDING YOUR TODDLER
+Water is the best drink for your child, but it should not replace human milk or infant formula during the first 12 months. Starting at 6 months, offer small amounts of water in an open cup between meals and breastfeedings or chestfeedings so the child learns to enjoy water while still getting the human milk or formula they need.
 
-Safe, Healthy Foods and Drinks
- Drinks                                               Milk                                                     Fruit Juice
-                                                      Between 9 and 12 months, you can start                   Sugary drinks like 100% fruit juice are not
- Water                                                offering your baby pasteurized whole (3.25%)             recommended for infants or toddlers. Avoid
- Water is the best drink for your child, but it       cow’s milk or fortified goat’s milk, as long as          offering juice to your todder but if you do:
- shouldn’t replace human milk or infant formula       they also eat a variety of iron-rich foods like          ✔ limit to ½ cup (125 ml) a day
- for the first 12 months.                             meat, fish, poultry, eggs, tofu, iron-fortified
-                                                                                                               ✔ serve only at meal or snack time and in an
-                                                      cereals, beans, peas and lentils. Offer them
- Starting at 6 months, give your child                                                                           open cup
-                                                      2 cups (500 ml) of milk every day if they no
- small amounts of water in an open cup.               longer breastfeed or chestfeed.                          ✘ avoid serving fruit juice in a bottle which can
- Offer it between meals and breastfeedings or                                                                    cause tooth decay
- chestfeedings so they learn to enjoy water while     At 24 months, you might choose to switch to
- still getting the human milk or formula they need.   lower-fat cow’s milk (1% or 2%). If your child is        Drinks to avoid
-                                                      over 24 months and doesn’t drink cow’s milk or           ✘ Sugary drinks like fruit juice, fruit and
- ✔ If your home was built before 1989, you may        fortified goat’s milk, offer them unsweetened soy
-   have lead pipes. Flush them each morning                                                                      fruit-flavoured drinks made from powders or
-                                                      beverage fortified with calcium and vitamin D.
-   by running your water for 1 to 5 minutes or                                                                   crystals, pop, sports drinks, and slush drinks.
-                                                      ✔ Limit milk to no more than 3 cups (750 ml)               These have too much sugar and not enough
-   until it turns cold.
-                                                        per day, so your toddler has room for other              of the nutrients toddlers need.
- ✔ If you have your own private water                   healthy foods.
-   supply, have your water tested according                                                                    ✘ Drinks with caffeine like soft drinks, sports
-                                                      ✘ Avoid letting your toddler sip milk between              drinks, energy drinks, coffee, coffee-slush
-   to provincial guidelines. Learn more at              meals or snacks, which can lead to tooth decay.
-   healthlinkbc.ca.                                                                                              drinks, tea and hot chocolate. These can
-                                                                                                                 make your toddler excited and anxious and
- ✔ Always follow “boil water” advisories in                                                                      make sleep more difficult.
-   your area.
-                                                                                                               ✘ Unpasteurized drinks, including
-                                                                 DID YOU KNOW?
-                                                                                                                 unpasteurized cow’s milk, goat’s milk, fruit
-            HOW TO                                              Your toddler can continue to
-                                                                                                                 juice and cider may contain dangerous
-            Check drinking-water                        breastfeed or chestfeed or drink expressed
-                                                                                                                 bacteria.
-            advisories online                           human milk until they’re 24 months or older.
-                                                                                                               ✘ Toddler nutritional supplement drinks
-   • For provincial advisories, visit gov.bc.ca/
-                                                                                                                 aren’t needed.
-     gov/content/environment/air-land-water/
-                                                                                                               ✘ Drinks containing sugar substitutes
-     water/water-quality/drinking-water-                          TRY THIS
-                                                                                                                 (artificial sweeteners) offer no nutritional
-     quality/notices-boil-water-advisories.                      With meals, offer milk. Between                 value.
-   • For First Nations Health Authority advisories,     meals, offer water. And continue to
-                                                                                                               If you’re concerned about your child’s food intake
-     visit fnha.ca/what-we-do/environmental-            breastfeed or chestfeed for as long as
-                                                                                                               or growth, talk with your health care provider.
-     health/drinking-water-advisories.                  you choose.
+- If your home was built before 1989, it may have lead pipes. Flush them each morning by running water for 1 to 5 minutes or until it turns cold.
+- If you have a private water supply, have it tested according to provincial guidelines. Learn more at healthlinkbc.ca.
+- Always follow local boil-water advisories.
+- Check provincial advisories at gov.bc.ca/gov/content/environment/air-land-water/water/water-quality/drinking-water-quality/notices-boil-water-advisories. Check First Nations Health Authority advisories at fnha.ca/what-we-do/environmental-health/drinking-water-advisories.
 
+### Milk and Other Drinks
 
- Toddler’s First Steps                                                                                    Feeding Your Toddler • Safe, Healthy Foods and Drinks     55
-```
+Between 9 and 12 months, you can start offering pasteurized whole (3.25%) cow’s milk or fortified goat’s milk, as long as the child also eats a variety of iron-rich foods such as meat, fish, poultry, eggs, tofu, iron-fortified cereals, beans, peas and lentils. If they no longer breastfeed or chestfeed, offer 2 cups (500 ml) of milk every day. At 24 months, you may choose to switch to lower-fat cow’s milk (1% or 2%). If a child over 24 months does not drink cow’s milk or fortified goat’s milk, offer unsweetened soy beverage fortified with calcium and vitamin D.
 
-## PDF page 60
+Limit milk to no more than 3 cups (750 ml) per day so your toddler has room for other healthy foods. Avoid letting them sip milk between meals or snacks, which can lead to tooth decay. With meals, offer milk; between meals, offer water. Toddlers may continue breastfeeding or chestfeeding or drinking expressed human milk until 24 months or older.
 
-```text
-                                                             Oysters                                          Foods to avoid
-                DID YOU KNOW?
-                                                             B.C. oysters are high in cadmium, so only give   ✘ Honey can give your baby botulism, a
-                Other than those made with soy,              them to your toddler in limited amounts.           food-borne illness. Never give honey or foods
-       plant-based drinks – like rice, almond,               Oysters should be full cooked to a minimum         containing honey to a child less than
-       cashew and oat milks – don’t have enough              internal temperature of 90°C for a minimum of      1 year old.
-       energy or protein for your growing toddler.           90 seconds.                                      ✘ Sprouts (like alfalfa and mung bean) can
-       Don’t let these drinks replace human milk,
-                                                                                                                contain harmful bacteria. Only give them to
-       cow’s milk or formula, and don’t offer them           Fish                                               your toddler if they’re thoroughly cooked.
-       until your child is at least 2 and getting
-                                                             Fish provides many nutrients including protein   ✘ Unpasteurized cheese and yogurt made
-       plenty of nutrition from their diet.
-                                                             and omega-3 fats, which are important for          from raw milk may contain harmful bacteria
-                                                             brain and eye development. Offer it to your        that can cause toddlers to become very sick
-     Foods                                                   child regularly. Some fish, though, is high in     or even die. Check the label, and choose only
-                                                             mercury, and should be limited.                    those made from pasteurized milk.
-     Vegetables and fruit
-                                                             High-mercury fish – serve in limited             ✘ Foods that can cause choking. (See
-     All vegetables and fruit – fresh, frozen, canned        amounts only:                                      Reducing Choking Hazards)
-     and dried – are healthy choices when they’re
-                                                                               Children        Children       ✘ Foods containing artificial sweeteners.
-     prepared and stored safely.
-                                                                               6-12 months     12-36 months
-     Meat, fish, poultry, seafood and eggs                    Fresh and        No more than    No more than   Highly processed foods
-                                                              frozen tuna,     40 grams        75 grams
-     Reduce the risk of food poisoning by fully                                                               Highly processed foods – store-bought and from
-                                                              shark, marlin,   (1¼ oz) per     (2½ oz) per
-     cooking all pork to an inside temperature of                                                             restaurants – are high in salt, sugar and saturated fats.
-                                                              swordfish,       month           month
-     71°C; ground beef, lamb and veal to 71°C; and                                                            Offer them less often and in smaller amounts. Try:
-                                                              escolar,
-     game meats to 74°C. Well-done pieces and                                                                 • stocking your kitchen with healthy snacks,
-                                                              orange
-     whole cuts of beef, lamb and veal should be                                                                like fruit, carrots and hard-boiled eggs
-                                                              roughy
-     cooked to 77°C. Eggs should be cooked until
-                                                              Canned           No more than    No more than   • planning your meals and snacks in advance
-     the yokes are hard (74°C). For poultry and
-     game birds, cook to 74°C for parts and ground            albacore tuna    40 grams        75 grams       • offering water instead of sugary drinks
-     meat, and 82°C for whole birds. Fish should                               (1¼ oz) per     (2½ oz) per    • limiting processed meats like ham, bacon,
-     be cooked to 70°C (fully cooked fish should                               week            week             sausage, hot dogs and luncheon meats
-     flake with a fork). Oysters should be cooked to         Fish not high in mercury – serve regularly:      • reducing store-bought cookies, cakes, candy,
-     90°C, but other shellfish can be cooked to 71°C.                                                           chocolate, chips and salty snacks
-                                                             • all other fish sold in Canada
-     Use a food thermometer to check the inside
-                                                             • canned light tuna including skipjack,          • offering fewer frozen packaged foods like pizza
-     temperature of meat.
-                                                               yellowfin and tongol                             and pasta
-     Liver                                                                                                    • choosing healthier menu options when eating out
-     Liver offers iron and other key nutrients, but                      BE AWARE                             • making homemade versions of favourite
-     eating too much can provide too much vitamin A.                    Fish high in mercury can damage         restaurant foods like fries, chicken strips
-     Give only small amounts to your toddler.                  your toddler’s growing brain.                    and pizza
+Plant-based drinks other than soy—such as rice, almond, cashew and oat milks—do not have enough energy or protein for a growing toddler. Do not let them replace human milk, cow’s milk or formula, and do not offer them until the child is at least 2 and getting plenty of nutrition from their diet.
 
+Sugary drinks such as 100% fruit juice are not recommended for infants or toddlers. Avoid juice, but if offered, limit it to ½ cup (125 ml) a day and serve only at a meal or snack in an open cup. Avoid serving fruit juice in a bottle because this can cause tooth decay.
 
-56   Feeding Your Toddler • Safe, Healthy Foods and Drinks                                                                                      Toddler’s First Steps
-```
+Avoid:
 
-## PDF page 61: Vitamin and Mineral Supplements; Vitamin D; Iron
+- Sugary drinks such as fruit juice; fruit and fruit-flavoured drinks made from powders or crystals; pop; sports drinks; and slush drinks. They have too much sugar and not enough of the nutrients toddlers need.
+- Caffeinated drinks such as soft drinks, sports drinks, energy drinks, coffee, coffee-slush drinks, tea and hot chocolate. These can make toddlers excited and anxious and make sleep more difficult.
+- Unpasteurized drinks, including cow’s milk, goat’s milk, fruit juice and cider, which may contain dangerous bacteria.
+- Toddler nutritional-supplement drinks, which are not needed.
+- Drinks with sugar substitutes (artificial sweeteners), which offer no nutritional value.
 
-```text
-FEEDING YOUR TODDLER
+If you are concerned about your child’s food intake or growth, talk with your health care provider.
 
-Vitamin and Mineral Supplements
- If your toddler eats a variety of foods and is growing well, they probably don’t need extra vitamins or minerals, with 2 possible exceptions:
+### Foods
 
+All vegetables and fruit—fresh, frozen, canned and dried—are healthy choices when prepared and stored safely.
 
- Vitamin D                                              How to get it                                          Iron
-                                                        Some vitamin D comes from sunshine, but it’s
- Why your toddler needs it                              not enough for our bodies. The rest comes from         Why your toddler needs it
- To build healthy bones and teeth.                      eating certain foods.                                  For growth and brain development.
-                                                        • egg: 1 yolk = 32 IU
- How much your toddler needs                            • soft margarine: 1 teaspoon (5 ml) = 35 IU            How much your toddler needs
- 600 IU each day from Vitamin D supplement              • salmon: 30 grams (1 oz) = 82 to 257 IU               2 or more servings of iron-rich foods per day.
- as well as food sources for children 12 months
-                                                        • formula: 1 cup (250 ml) = 100 IU
- and over.                                                                                                     How to get it
-                                                        • cow’s milk (not recommended before
-                                                          9 months): 1 cup (250 ml) = 100 IU                   From foods high in iron, including meat, poultry,
-                                                                                                               fish, iron-fortified infant cereals, eggs, tofu,
-             BE AWARE                                   When a supplement is needed                            beans and other legumes.
-            • Talk with your health care                Until they’re 24 months old, give your toddler
-     provider before giving your toddler any            400 IU of liquid vitamin D each day if they:           When a supplement may be needed
-     supplement.
-                                                        • breastfeed or chestfeed, or drink both human         Talk with your health care provider if your
-   • Only give supplements approved for your              milk and formula                                     toddler:
-     child’s age.
-                                                        • breastfeed or chestfeed and drink some cow’s         • was premature
-   • Don’t tell your child that supplements are           milk or vitamin D-fortified goat’s milk              • doesn’t eat enough iron-rich foods
-     candy. Keep them out of their reach.
-                                                        • don’t drink 2 cups of cow’s milk and eat a           • drinks more than 3 cups (750 ml) of milk
-   • Don’t give your toddler cod liver oil                variety of other vitamin D-rich foods every day        each day
-     or other fish liver oils, which contain
-                                                        • drink goat’s milk that isn’t fortified with          • is vegetarian or vegan (see Vegetarian and
-     dangerous amounts of vitamin A.
-                                                          vitamin D                                              Vegan Toddlers)
-   • To prevent choking, only give your
-     toddler gummies or chewable tablets                After they’re 24 months old, your toddler may          For more information about vitamin and
-     after crushing or chopping them into               need a supplement to reach the recommended             mineral supplements, call a HealthLink BC
-     small bits.                                        600 IU per day. Give them 400 IU of vitamin D          dietitian at 8-1-1.
-                                                        each day if they don’t have 2 cups of cow’s milk
-                                                        or fortified soy beverage and a variety of other
-                                                        vitamin D-rich foods every day.
+Reduce food-poisoning risk by fully cooking foods to these internal temperatures. Use a food thermometer to check meat’s internal temperature.
 
+| Food                                                   | Internal temperature and doneness                |
+| ------------------------------------------------------ | ------------------------------------------------ |
+| Pork                                                   | 71°C                                             |
+| Ground beef, lamb and veal                             | 71°C                                             |
+| Game meats                                             | 74°C                                             |
+| Well-done pieces and whole cuts of beef, lamb and veal | 77°C                                             |
+| Eggs                                                   | 74°C, until the yolks are hard                   |
+| Poultry and game birds: parts and ground meat          | 74°C                                             |
+| Poultry and game birds: whole birds                    | 82°C                                             |
+| Fish                                                   | 70°C; fully cooked fish should flake with a fork |
+| Oysters                                                | 90°C                                             |
+| Other shellfish                                        | 71°C                                             |
 
- Toddler’s First Steps                                                                                  Feeding Your Toddler • Vitamin and Mineral Supplements     57
-```
+Liver offers iron and other key nutrients, but too much can provide excessive vitamin A. Give only small amounts to your toddler.
 
-## PDF page 62: Reducing Choking Hazards
+#### Fish and Oysters
 
-```text
-     FEEDING YOUR TODDLER
+Fish provides nutrients including protein and omega-3 fats, which are important for brain and eye development. Offer fish regularly, but limit fish high in mercury.
 
-     Reducing Choking Hazards
-      Toddlers are at greater risk for choking because
-      their mouth muscles can’t yet control hard or      If food is:                     Like:                      Make it safer by:
-      slippery foods and their airways are narrow.
-                                                         Round         • Whole grapes, small tomatoes,       • Chopping, dicing or cutting
-      Reduce the risk by:                                                large berries, hot dogs, sausages     lengthwise
+| Fish high in mercury                                                       | Children 6–12 months                    | Children 12–36 months                   |
+| -------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------- |
+| Fresh and frozen tuna, shark, marlin, swordfish, escolar and orange roughy | No more than 40 grams (1¼ oz) per month | No more than 75 grams (2½ oz) per month |
+| Canned albacore tuna                                                       | No more than 40 grams (1¼ oz) per week  | No more than 75 grams (2½ oz) per week  |
 
-      • staying with your toddler while they eat         Hard          • Fruit with pits or seeds            • Removing pits and seeds
-      • offering your child foods with textures that                                                         • Removing fruit skins
-        they can safely eat
-                                                                       • Raw vegetables like carrots that    • Grating or chopping finely, or cooking
-      • not letting them eat while they’re walking or                    can break into chunks                 and slicing into thin sticks
-        riding in a stroller or a vehicle                              • Whole nuts, whole peanuts, seeds    • Chopping finely
-      • knowing what to do if your child chokes                        • Olives with pits
+Fish not high in mercury and suitable to serve regularly includes all other fish sold in Canada and canned light tuna, including skipjack, yellowfin and tongol. Fish high in mercury can damage a toddler’s growing brain.
 
-                                                         Sticky        • Peanut butter                       • Spreading thinly or mixing with
-                  TRY THIS                                                                                     human milk or water to thin it out
-                                                                       • Dried fruit, raisins                • Cutting into small pieces
-                  Consider taking a first aid course
-        – either online or in person. See First Aid
-                                                         Stringy       • Celery, oranges, pineapple          • Removing large, stringy sections and
-        | HealthLink BC at healthlinkbc.ca/tests-                                                              finely chopping
-                                                                       • Leafy vegetables
-        treatments-medications/first-aid
-                                                         Chunky        • Lumps of peanut butter, nut         • Choosing smooth varieties and
-                                                                         butter, or seed butter on a spoon     spreading thinly
-                                                                       • Chunks of cheese and cheese         • Shredding or grating
-                 BE AWARE                                                strings
-                  Some foods are more likely to                        • Chunks of meat                      • Cooking until tender and cutting into
-                                                                                                               small pieces
-        cause choking: whole nuts, whole peanuts,
-        whole grapes, whole cherry tomatoes,             Bony          • Chicken                             • Removing bones
-        seeds, dried fruit, olives with pits, fish
-                                                                       • Fish                                • Flaking and rubbing between fingers
-        with bones, popcorn, gum, cough drops,                                                                 to feel for bones
-        marshmallows, hard candy, and foods on
-        toothpicks and skewers. Don’t give them to
-        children under 4 years old.
+B.C. oysters are high in cadmium, so give them only in limited amounts. Oysters should be fully cooked to a minimum internal temperature of 90°C for at least 90 seconds.
 
+#### Foods to Avoid and Highly Processed Foods
 
+- Honey can cause botulism, a food-borne illness. Never give honey or foods containing honey to a child younger than 1 year.
+- Sprouts such as alfalfa and mung bean can contain harmful bacteria. Give them only if thoroughly cooked.
+- Unpasteurized cheese and yogurt made from raw milk may contain harmful bacteria that can make toddlers very sick or die. Check the label and choose products made from pasteurized milk.
+- Avoid foods that can cause choking (see Reducing Choking Hazards) and foods containing artificial sweeteners.
 
+Highly processed foods from stores and restaurants are high in salt, sugar and saturated fats. Offer them less often and in smaller amounts. Try stocking healthy snacks such as fruit, carrots and hard-boiled eggs; planning meals and snacks; offering water instead of sugary drinks; limiting processed meats such as ham, bacon, sausage, hot dogs and luncheon meats; reducing cookies, cakes, candy, chocolate, chips and salty snacks; offering fewer frozen packaged foods such as pizza and pasta; choosing healthier restaurant menu options; and making homemade versions of favourite restaurant foods such as fries, chicken strips and pizza.
 
-58    Feeding Your Toddler • Reducing Choking Hazards                                                                              Toddler’s First Steps
-```
+## Vitamin and Mineral Supplements
 
-## PDF page 63: Good Mealtime Habits
+If your toddler eats a variety of foods and is growing well, they probably do not need extra vitamins or minerals, with two possible exceptions: vitamin D and iron.
 
-```text
-FEEDING YOUR TODDLER
+### Supplement Safety
 
-Good Mealtime Habits
-             DID YOU KNOW?                                        TRY THIS                                      BRAIN BUILDER
-           Studies show that children who                         When you’ll be away from home                  Build language skills by turning
-   have meals with family members eat                    for meals or snack times, pack nutritious      off the TV and putting away other screens
-   healthier and feel better about themselves.           foods like dry cereal, sliced boiled egg,      during meals. Use the time to talk as a
-                                                         cheese and crackers, cut-up soft fruits, and   family instead.
- ✔ Eat together. By sitting down together, you’ll        soft vegetables with hummus. You’ll save
-   build your toddler’s language and social skills       money and eat better.
-   while encouraging healthy eating habits.
- ✔ Have meals and snacks at about the same
-   times each day. Having a routine lets your
-   toddler focus on trying a variety of foods
-   and learning the skills to feed themselves.
-   “Grazing” between meals and snacks can
-   become an unhealthy habit that’s also
-   harmful to teeth.
- ✔ Make mealtimes learning times. Mealtimes
-   can help your toddler develop fine motor
-   skills (like picking up pieces of food with
-   their fingers), language skills (like talking and
-   listening), and social skills (like saying “please”
-   and “thank you”).
- ✔ Reduce distractions. Turn off the TV and keep
-   toys and phones away from the table. This
-   puts the focus on eating and conversation and
-   helps you follow your toddler’s fullness cues.
-   (See Eating Well)
- ✔ Don’t worry about the mess. Exploring
-   food with their eyes, hands and mouth is
-   an important – and often messy! – part of
-   your child’s learning. They may also drop
-   food on the floor, by mistake or on purpose.
-   Be patient, and have a wet cloth nearby for
-   post-meal cleanup.
+Talk with your health care provider before giving any supplement. Give only supplements approved for your child’s age. Do not tell your child that supplements are candy; keep them out of reach. Do not give cod liver oil or other fish liver oils, which contain dangerous amounts of vitamin A. To prevent choking, give gummies or chewable tablets only after crushing or chopping them into small bits.
 
- Toddler’s First Steps                                                                                  Feeding Your Toddler • Good Mealtime Habits   59
-```
+### Vitamin D
 
-## PDF page 64: Picky Eating
+Vitamin D is needed to build healthy bones and teeth. The handbook lists 600 IU each day from vitamin D supplements and food sources for children 12 months and older. Its supplement-specific amounts and conditions are set out below.
 
-```text
-     FEEDING YOUR TODDLER
+Some vitamin D comes from sunshine, but it is not enough for our bodies. Other sources include egg (1 yolk = 32 IU); soft margarine (1 teaspoon / 5 ml = 35 IU); salmon (30 grams / 1 oz = 82 to 257 IU); formula (1 cup / 250 ml = 100 IU); and cow’s milk (not recommended before 9 months; 1 cup / 250 ml = 100 IU).
 
-     Picky Eating
-      Toddlers are “eaters in training,” so it’s normal
-      for them to go through periods of picky eating.             TRY THIS                                   DID YOU KNOW?
-      With time and practice, your child will learn                Let your toddler pick out a new            Your toddler may need to be given
-      to enjoy a variety of foods. Be patient, and        vegetable or fruit each time you visit     a new food lots of times before they’re
-      encourage them by:                                  the grocery store. Or try growing a few    willing to try it. Keep offering new foods,
-      ✔ letting them smell, touch and taste new           vegetables together. When children help    and include ones they’ve refused in the past.
-        foods                                             choose and prepare meals, they often
-                                                          enjoy them more.
-      ✔ offering a new food along with at least one
-        food they already like
-      ✔ letting them eat at their own pace, whether
-        that’s fast or slow
-      ✔ offering foods with a variety of textures
-      ✔ eating together, and offering them foods
-        from the family meal
-      ✔ being a good role model by eating a
-        balanced, healthy diet
-      ✔ not pressuring your child, and instead
-        trusting them to decide whether to eat and
-        how much to eat
+Until age 24 months, give 400 IU of liquid vitamin D daily if your toddler:
 
+- Breastfeeds or chestfeeds, or drinks both human milk and formula.
+- Breastfeeds or chestfeeds and drinks some cow’s milk or vitamin-D-fortified goat’s milk.
+- Does not drink 2 cups of cow’s milk and eat a variety of other vitamin-D-rich foods every day.
+- Drinks goat’s milk that is not fortified with vitamin D.
 
+After age 24 months, your toddler may need a supplement to reach the recommended 600 IU per day. Give 400 IU each day if they do not have 2 cups of cow’s milk or fortified soy beverage and a variety of other vitamin-D-rich foods every day.
 
+### Iron
 
-60    Feeding Your Toddler • Picky Eating                                                                                       Toddler’s First Steps
-```
+Iron is needed for growth and brain development. Offer 2 or more servings of iron-rich food per day. Foods high in iron include meat, poultry, fish, iron-fortified infant cereals, eggs, tofu, beans and other legumes.
 
-## PDF page 65: Vegetarian and Vegan Toddlers; Nutrients to Pay Special Attention to
+Talk with your health care provider about iron if your toddler was premature; does not eat enough iron-rich foods; drinks more than 3 cups (750 ml) of milk each day; or is vegetarian or vegan (see Vegetarian and Vegan Toddlers). For more information about vitamin and mineral supplements, call a HealthLink BC dietitian at 8-1-1.
 
-```text
-FEEDING YOUR TODDLER
+## Reducing Choking Hazards
 
-Vegetarian and Vegan Toddlers
- With careful planning, feeding your toddler a        Nutrients to Pay Special                                  Protein
- vegetarian diet can be a healthy choice. Vegan
- diets are more restrictive so they require even
-                                                      Attention to                                              Why it’s needed: to build and repair cells and
-                                                                                                                make enzymes and hormones
- greater care. Talk with a registered dietitian at    If your child doesn’t eat meat or other animal
- HealthLink BC at 8-1-1 if you’re thinking about      products, they could be missing some key                  Where it’s found: human milk, store-bought
- feeding your child a diet free of animal products.   nutrients. Choose alternate foods carefully to            infant formula, tofu, lentils, beans, peas, nut and
-                                                      ensure they’re getting all the nutrition they need.       seed butters, soy based “meats,” homogenized
- Help your child get the nutrition they need by:
-                                                                                                                whole cow’s milk (3.25%), unsweetened fortified
- ✔ breastfeeding or chestfeeding up to                                                                          soy beverage (after 24 months), cheese, yogurt,
-   24 months and beyond
-                                                      Iron
-                                                                                                                soy yogurt
- ✔ introducing iron-rich foods at about               Why it’s needed: for red blood cells, growth and
-   6 months (see Introducing Solid Foods)             brain development
-                                                      Where it’s found: iron-fortified infant cereal,                       DID YOU KNOW?
- ✔ giving them 400 IU of liquid vitamin D
-   supplement every day (see Vitamin and              enriched cereals, quinoa, beans, peas, lentils,                        If your child is over 2 years old and
-   Mineral Supplements)                               tofu, blackstrap molasses                                    doesn’t drink cow’s milk or vitamin D-fortified
-                                                                                                                   goat’s milk, give them plain soy beverage
- ✔ offering iron-rich protein foods at each
-                                                                                                                   fortified with calcium, vitamin D and vitamin
-   meal and snack, like eggs (for vegetarians),                  DID YOU KNOW?                                     B12. Other plant-based beverages – like rice,
-   cooked tofu, soy and veggie “meats,” beans,
-                                                                Talk with a dietitian. Iron is best                almond and oat milk – don’t have enough
-   peas, lentils, nut and seed butters and iron-
-                                                        absorbed when eaten with foods high in                     nutrients for toddlers. If you offer these
-   fortified infant cereals                             vitamin C like oranges, grapefruit, kiwi,                  drinks, be sure to provide plenty of other
- See Feeding By Age for more feeding tips.              sweet potato, sweet peppers and broccoli.                  sources of energy and protein.
+Toddlers are at greater risk of choking because their mouth muscles cannot yet control hard or slippery foods and their airways are narrow. Reduce risk by staying with your toddler while they eat; offering foods with textures they can safely eat; not letting them eat while walking or riding in a stroller or vehicle; and knowing what to do if your child chokes. Consider taking a first-aid course, online or in person; see First Aid | HealthLink BC at healthlinkbc.ca/tests-treatments-medications/first-aid.
 
+Some foods are more likely to cause choking: whole nuts and peanuts, whole grapes, whole cherry tomatoes, seeds, dried fruit, olives with pits, fish with bones, popcorn, gum, cough drops, marshmallows, hard candy, and foods on toothpicks and skewers. Do not give these to children under 4 years old.
 
-             DID YOU KNOW?                            Omega-3 fats
-                                                                                                                Fat
-             Until your toddler is 2 years old        Why they’re needed: for brain development
-   or older, continue to offer human milk.                                                                      Why it’s needed: for energy and brain and
-                                                      and vision
-   If they’re under 2 and not breastfed or                                                                      nerve function
-                                                      Where they’re found: human milk, store-
-   chestfed, give them 2 cups (500 ml) of whole                                                                 Where it’s found: human milk, store-bought
-                                                      bought infant formula with DHA and ARA,
-   (3.25%) milk each day. Limit cow’s milk to no                                                                infant formula, ground nuts and seeds, nut and
-                                                      ground flax, chia, hemp seeds, ground walnuts,
-   more than 3 cups (750 ml) per day. If your                                                                   seed butters, tofu, avocado, cow’s milk, vegetable
-                                                      omega-3 enriched eggs and soft margarine,
-   child isn’t breastfed or chestfed and doesn’t                                                                oils, soft margarine
-                                                      flaxseed oil, canola oil, soybeans
-   drink cow’s milk, try a soy-based infant
-   formula.
+| Food shape or texture | Examples                                                                                                                             | Make it safer by                                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Round                 | Whole grapes, small tomatoes, large berries, hot dogs and sausages                                                                   | Chop, dice or cut lengthwise.                                                                                                               |
+| Hard                  | Fruit with pits or seeds; raw vegetables such as carrots that can break into chunks; whole nuts, peanuts and seeds; olives with pits | Remove pits and seeds and fruit skins. Grate or finely chop raw vegetables, or cook and slice into thin sticks. Chop nuts and seeds finely. |
+| Sticky                | Peanut butter; dried fruit and raisins                                                                                               | Spread peanut butter thinly or mix with human milk or water to thin it. Cut dried fruit into small pieces.                                  |
+| Stringy               | Celery, oranges, pineapple and leafy vegetables                                                                                      | Remove large, stringy sections and finely chop.                                                                                             |
+| Chunky                | Lumps of peanut, nut or seed butter on a spoon; chunks of cheese and cheese strings; chunks of meat                                  | Choose smooth spreads and spread thinly. Shred or grate cheese. Cook meat until tender and cut into small pieces.                           |
+| Bony                  | Chicken; fish                                                                                                                        | Remove chicken bones. Flake fish and rub it between your fingers to feel for bones.                                                         |
 
+## Good Mealtime Habits
 
+Studies show children who eat with family members eat healthier and feel better about themselves.
 
- Toddler’s First Steps                                                                                      Feeding Your Toddler • Vegetarian and Vegan Toddlers      61
-```
+- Eat together. This builds language and social skills and encourages healthy eating habits.
+- Have meals and snacks at about the same times each day. Routine lets toddlers focus on trying different foods and learning to feed themselves. Grazing between meals and snacks can become an unhealthy habit and harm teeth.
+- Make mealtimes learning times. Picking up food builds fine motor skills; talking and listening build language; saying “please” and “thank you” builds social skills.
+- Reduce distractions. Turn off the TV and keep toys and phones away from the table. This focuses attention on eating and conversation and helps you follow fullness cues (see Eating Well).
+- Do not worry about mess. Exploring food with eyes, hands and mouth is an important, often messy, part of learning. Children may drop food by mistake or on purpose. Be patient and keep a wet cloth nearby for cleanup.
 
-## PDF page 66
+When away from home at mealtimes or snack times, pack nutritious foods such as dry cereal, sliced boiled egg, cheese and crackers, cut-up soft fruit and soft vegetables with hummus. You will save money and eat better. Build language skills by turning off the TV and putting away screens during meals, and use the time to talk as a family.
 
-```text
-     Vitamin B12                                            For more information, talk with a registered
-                                                            dietitian at HealthLink BC at 8-1-1 and see            BRAIN BUILDER
-     Why it’s needed: for healthy nerve and
-                                                            Canada’s food guide.                                    If you’re vegan, your milk may be
-     blood cells and to make DNA, the genetic
-     material in cells                                                                                     low in vitamin B12. Help your toddler get
-                                                                                                           enough of this brain-building nutrient by
-     Where it’s found: eggs, fortified foods like                                                          eating B12-fortified foods or taking a daily
-     veggie “meats,” fortified nutritional yeast, store-                                                   supplement.
-     bought infant formula, unsweetened fortified
-     soy beverage (after 24 months)
+## Picky Eating
 
+Toddlers are “eaters in training,” so periods of picky eating are normal. With time and practice, children learn to enjoy a variety of foods. Be patient and encourage them by letting them smell, touch and taste new foods; offering a new food with at least one food they already like; letting them eat at their own pace; offering a variety of textures; eating together and serving family-meal foods; modelling a balanced, healthy diet; and avoiding pressure while trusting them to decide whether and how much to eat.
 
-     Calcium
-     Why it’s needed: to build strong bones
-     and teeth
-     Where it’s found: human milk, store-bought
-     infant formula, unsweetened fortified soy
-     beverage (after 24 months), calcium-fortified
-     tofu, cheese, yogurt, baked beans, blackstrap
-     molasses and smaller amounts in almond butter,
-     sesame butter, oranges
+A toddler may need a new food offered many times before trying it. Keep offering new foods, including foods they have refused before. Let your toddler choose a new vegetable or fruit at the grocery store, or grow vegetables together. Children often enjoy meals more when they help choose and prepare them.
 
+## Vegetarian and Vegan Toddlers
 
-                DID YOU KNOW?
-                 Toddlers who drink soy-based
-       formula may need more calcium-rich foods
-       in their diet.
+With careful planning, a vegetarian diet can be a healthy choice. Vegan diets are more restrictive and require greater care. If considering a diet free of animal products, talk with a registered dietitian at HealthLink BC at 8-1-1.
 
+Help your child get needed nutrition by breastfeeding or chestfeeding up to 24 months and beyond; introducing iron-rich foods around 6 months (see Introducing Solid Foods); giving 400 IU liquid vitamin D daily (see Vitamin and Mineral Supplements); and offering iron-rich protein foods at each meal and snack. These include eggs for vegetarians, cooked tofu, soy and vegetarian “meats,” beans, peas, lentils, nut and seed butters, and iron-fortified infant cereals. See Feeding by Age for more tips.
 
-     Zinc
-     Why it’s needed: to heal wounds and keep the
-     immune system strong
-     Where it’s found: nuts, pumpkin seeds, squash
-     seeds, tempeh, tofu, unsweetened fortified soy
-     beverage (after 24 months), soy based “meats,”
-     lentils, dried peas, eggs, milk, soy yogurt
+Continue offering human milk until age 2 or older. If under 2 and not breastfed or chestfed, give 2 cups (500 ml) of whole (3.25%) milk each day. Limit cow’s milk to no more than 3 cups (750 ml) per day. If not breastfed or chestfed and not drinking cow’s milk, try soy-based infant formula.
 
+### Nutrients to Pay Special Attention To
 
+- **Iron:** Needed for red blood cells, growth and brain development. Sources include iron-fortified infant cereal, enriched cereals, quinoa, beans, peas, lentils, tofu and blackstrap molasses. Iron is best absorbed with vitamin-C-rich foods such as oranges, grapefruit, kiwi, sweet potato, sweet peppers and broccoli. Talk with a dietitian.
+- **Omega-3 fats:** Needed for brain development and vision. Sources include human milk; store-bought infant formula with DHA and ARA; ground flax, chia and hemp seeds; ground walnuts; omega-3-enriched eggs and soft margarine; flaxseed oil, canola oil and soybeans.
+- **Protein:** Needed to build and repair cells and make enzymes and hormones. Sources include human milk, store-bought infant formula, tofu, lentils, beans, peas, nut and seed butters, soy-based “meats,” whole cow’s milk (3.25%), unsweetened fortified soy beverage after 24 months, cheese, yogurt and soy yogurt.
+- **Fat:** Needed for energy and brain and nerve function. Sources include human milk, store-bought infant formula, ground nuts and seeds, nut and seed butters, tofu, avocado, cow’s milk, vegetable oils and soft margarine.
+- **Vitamin B12:** Needed for healthy nerve and blood cells and to make DNA, the genetic material in cells. Sources include eggs; fortified foods such as vegetarian “meats” and nutritional yeast; store-bought infant formula; and unsweetened fortified soy beverage after 24 months. If you are vegan, your milk may be low in B12; help your toddler get enough through B12-fortified foods or a daily supplement.
+- **Calcium:** Needed to build strong bones and teeth. Sources include human milk, store-bought infant formula, unsweetened fortified soy beverage after 24 months, calcium-fortified tofu, cheese, yogurt, baked beans, blackstrap molasses and smaller amounts in almond butter, sesame butter and oranges. Toddlers who drink soy-based formula may need more calcium-rich foods.
+- **Zinc:** Needed to heal wounds and keep the immune system strong. Sources include nuts, pumpkin and squash seeds, tempeh, tofu, unsweetened fortified soy beverage after 24 months, soy-based “meats,” lentils, dried peas, eggs, milk and soy yogurt.
 
+For more information, talk with a registered dietitian at HealthLink BC at 8-1-1 and see Canada’s food guide. For a child over 2 who does not drink cow’s milk or vitamin-D-fortified goat’s milk, give plain soy beverage fortified with calcium, vitamin D and vitamin B12. Other plant-based drinks such as rice, almond and oat milk do not have enough nutrients for toddlers. If offering them, provide plenty of other sources of energy and protein.
 
-62   Feeding Your Toddler • Vegetarian and Vegan Toddlers                                                                             Toddler’s First Steps
-```
+## Understanding Food Allergies
 
-## PDF page 67: Understanding Food Allergies; Common Food Allergens; Introducing Common Food Allergens; Signs of Food Allergy
+A **food allergy** is the body mistaking a food as harmful. Common food allergens are milk and milk products; eggs; peanuts; tree nuts such as almonds, cashews and walnuts; soy; seafood (fish, shellfish and crustaceans such as crab and lobster); wheat; sesame; mustard; and sulphites. Food allergy and other allergic conditions such as eczema, asthma and hay fever tend to run in families. Discuss family history with your health care provider to find out if your child is at risk.
 
-```text
-FEEDING YOUR TODDLER
+### Introducing Common Food Allergens
 
-Understanding Food Allergies
-  What is a food allergy?                            Introducing Common                                        Signs of Food Allergy
-  The body mistaking a food as harmful.              Food Allergens                                            Feeding common allergens for the first time is
-                                                     To reduce the risk of a food allergy developing,          safe, and rarely causes a serious reaction.
+To reduce the risk of a food allergy developing, introduce common food allergens when your baby is ready for solids, usually around 6 months. Offer them one at a time, at separate meals. Start with the allergens your family eats most often. For example, blend peanut and tree-nut butters into infant cereal or spread thinly on strips of toast; serve well-cooked egg or seafood; or offer milk products such as yogurt or grated cheese. Wait until 9 to 12 months to offer whole (3.25%) milk.
 
- Common Food Allergens                               introduce common food allergens when your                 Symptoms of an allergic reaction usually appear
-                                                     baby has shown that they are ready for solid              within a few minutes of being exposed to a
- Foods that most commonly cause food                 foods – usually around 6 months.                          food, but can happen up to 2 hours later. The
- allergy are:
-                                                     Start by offering them common food allergens              most common signs include:
- • milk and milk products
-                                                     one at a time, at separate meals. Begin with the          • hives, swelling, redness or rash
- • eggs
-                                                     common allergens your family eats most often.             • stuffy or runny nose with itchy, watery eyes
- • peanuts                                           Try, for example:                                         • vomiting
- • tree nuts – like almonds, cashews and walnuts
-                                                     • peanut and tree nut butters blended into                • coughing
- • soy                                                 infant cereal or spread thinly on strips of toast
- • seafood – like fish, shellfish and crustaceans                                                              If you think a food may have caused an allergic
-                                                     • well-cooked egg or seafood
-   such as crab and lobster                                                                                    reaction, stop offering it and speak to your
-                                                     • milk products like yogurt or grated cheese              health care provider. You can continue to
- • wheat
-                                                                                                               introduce other new foods, including other
- • sesame                                            Wait until 9 to 12 months to offer whole (3.25%)
-                                                                                                               common food allergens.
- • mustard and sulphites                             milk.
-                                                                                                               Severe symptoms require immediate
-                                                     If your baby has no reaction, keep offering the
-                                                                                                               attention. These include:
-             DID YOU KNOW?                           food allergen regularly (for example, a few times
-                                                     a week) to help them maintain tolerance to                • swelling of the mouth, tongue or throat
-            Food allergy and other allergic                                                                    • hives that are spreading
-                                                     these foods.
-   conditions – such as eczema, asthma and
-                                                                                                               • trouble breathing, repetitive coughing or
-   hay fever – tend to run in families. Talk about
-                                                                                                                 wheezing
-   your family history with your health care
-   provider to find out if your child is at risk.                                                              • difficulty swallowing or a hoarse voice or cry
-                                                                                                               • pale or bluish face or lips
-                                                                                                               • faintness, weakness or passing out
-             TRY THIS
-             See Reducing Risk of Food Allergy
-   in Your Baby at healthlinkbc.ca/healthy-                     MEDICAL EMERGENCY
-   eating-physical-activity/age-and-stage/
-                                                                Call 9-1-1 or the local emergency number right away if your child is showing signs of a
-   infants-children-and-youth/reducing-risk-
-                                                       severe allergic reaction.
-   food to learn more.
+Feeding common allergens for the first time is safe and rarely causes a serious reaction. If there is no reaction, keep offering that allergen regularly (for example, a few times a week) to help maintain tolerance.
 
- Toddler’s First Steps                                                                                     Feeding Your Toddler • Understanding Food Allergies    63
-```
+### Signs of Food Allergy
+
+Symptoms usually appear within minutes of exposure but can occur up to 2 hours later. Common signs include:
+
+- Hives, swelling, redness or rash.
+- Stuffy or runny nose with itchy, watery eyes.
+- Vomiting.
+- Coughing.
+  If you think a food caused an allergic reaction, stop offering it and speak to your health care provider. You can continue introducing other new foods, including other common allergens.
+
+Severe symptoms requiring immediate attention include:
+
+- Swelling of the mouth, tongue or throat.
+- Spreading hives.
+- Trouble breathing, repetitive coughing or wheezing.
+- Difficulty swallowing or a hoarse voice or cry.
+- A pale or bluish face or lips.
+- Faintness, weakness or passing out.
+
+**Medical emergency**
+
+Call 9-1-1 or the local emergency number right away if your child shows signs of a severe allergic reaction.
+
+For more information, see “Reducing Risk of Food Allergy in Your Baby” at healthlinkbc.ca/healthy-eating-physical-activity/age-and-stage/infants-children-and-youth/reducing-risk-food.

@@ -2,13 +2,15 @@
 
 _Source pages: 38-43_
 
+_Handbook: Baby’s Best Chance, 8th edition, updated in 2024._
+
 ## Stages of Pregnancy
 
-**TRY THIS**
+**Try this**
 
 Whatever changes you’re experiencing, you’ll feel better throughout your pregnancy if you stay active, rest when you’re tired, drink plenty of water and eat well. When you’re pregnant, it’s not just your belly that’s growing. Your whole body is going through a variety of normal changes.
 
-**WHAT YOU CAN DO**
+**What you can do**
 
 Show support by being understanding of your partner’s moods and going along on visits to health care providers. Talk about how you’re feeling, too.
 
@@ -28,18 +30,18 @@ Show support by being understanding of your partner’s moods and going along on
 - **Shortness of breath** — This is normal, but contact your health care provider if you have a family history of heart problems. Seek emergency care if your symptoms come on suddenly and you have chest pain or if the shortness of breath makes it hard to lie flat or speak.
 - **Light-headedness** — Stand up slowly and eat regularly.
 
-**DID YOU KNOW?**
+**Did you know?**
 
 Up to 80% of people will have nausea and vomiting during their pregnancy. For many, this lasts beyond 20 weeks.
 
-**MEDICAL EMERGENCY**
+**Medical emergency**
 
 Most miscarriages happen in the first 12 weeks of pregnancy. Call your health care provider if you have:
 
 - blood or tissue coming from your vagina
 - severe pain in your belly, lower back or pelvis
 
-**SEEK CARE**
+**Seek care**
 
 Contact your health care provider or HealthLink BC (`8-1-1` or `healthlinkbc.ca`) if you:
 
@@ -48,11 +50,11 @@ Contact your health care provider or HealthLink BC (`8-1-1` or `healthlinkbc.ca`
 - have lost more than 5% of your pre-pregnancy weight
 - pee less than 3 times in 24 hours
 
-**WHAT YOU CAN DO**
+**What you can do**
 
 Show support by looking into prenatal classes, giving gentle massage and exercising and eating well with your partner.
 
-**DID YOU KNOW?**
+**Did you know?**
 
 By the second trimester, your chance of miscarriage is low.
 
@@ -69,15 +71,15 @@ By the second trimester, your chance of miscarriage is low.
 - **Constipation** — Drink lots of water, eat high-fibre foods and stay active. Don’t hold back or force bowel movements. Don’t use suppositories, mineral oil, laxatives or enemas unless recommended by your health care provider.
 - **Line running from belly button to pubic area, darkening of face** — Line may remain after birth, but will usually fade in a few weeks.
 
-**TRY THIS**
+**Try this**
 
 Talk or read to your baby or play soothing music – and encourage your partner to do the same. Your baby can hear you and is learning what you sound like.
 
-**WHAT YOU CAN DO**
+**What you can do**
 
 Help prepare your home for the baby, take care of household duties and get ready to give support during labour.
 
-**DID YOU KNOW?**
+**Did you know?**
 
 In the third trimester, your breathing will likely improve as your baby moves down to prepare for birth. Take note of when this happens and tell your health care provider at your next visit.
 

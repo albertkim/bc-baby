@@ -2,6 +2,8 @@
 
 _Source pages: 165-170_
 
+_Handbook: Baby’s Best Chance, 8th edition, updated in 2024._
+
 ### NESTS for Well-Being
 
 - **Nutrition** — Try to eat nutritious food, and sip water throughout the day when you can. These are some ideas for me to support my well-being (favourite snack, water bottle, easy to prepare meals and snacks, ask friends and family for frozen meals, etc):

@@ -32,9 +32,9 @@ Handbook Markdown and metadata are bundled into the server build, so production 
 npm run generate:metadata
 ```
 
-The Python extraction scripts are offline tools. The app does not execute them or require Python. They require `pypdf`; `scripts/extract_layout_sections.py` also requires Poppler’s `pdftotext`. Run that script after any legacy baby extraction to regenerate all toddler notes and the repaired baby development section, then regenerate metadata. It preserves page layout, column alignment, numbers, and check/cross symbols in fixed-width transcripts rather than reflowing age tables into prose.
+Handbook Markdown is curated against the source PDFs, not generated directly from PDF text. Its headings, lists, procedures, age tables, and warnings reconstruct the meaning of the source layout. Keep numbers, units, age boundaries, conditions, resources, and substantive wording intact. Mark unclear or malformed source text explicitly instead of inventing a correction. PDF extraction can help read the source, but it must not overwrite these notes. The old extraction and cleanup scripts have been removed because they produced or reintroduced layout errors.
 
-Toddler notes include PDF pages 10–146: introduction, all five care sections, resources, and Canada’s Food Guide. Front matter, the index, and the back cover are omitted. Text transcripts do not capture illustrations; links open the original PDFs at the relevant physical page. Other existing baby sections retain their earlier extraction format.
+Toddler notes include physical PDF pages 10–146: introduction, all five care sections, resources, and Canada’s Food Guide. Front matter, the index, and the back cover are omitted. Informative diagram labels and relationships are transcribed where they can be established; the source PDFs remain available for the original illustrations. Source links use physical PDF page numbers rather than the book’s printed page numbers.
 
 ## Verification
 

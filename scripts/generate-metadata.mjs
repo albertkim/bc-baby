@@ -90,8 +90,8 @@ function getSummary(lines) {
     .filter((line) => !line.startsWith('_Source pages:'))
     .filter((line) => !line.startsWith('_Handbook:'))
     .filter((line) => !line.startsWith('```'))
-    .filter((line) => !line.startsWith('The following page transcripts'))
-    .filter((line) => !/^\*\*[A-Z0-9 ?&/-]+\*\*$/.test(line))
+    .filter((line) => !/^\*\*[^*]+\*\*:?$/.test(line))
+    .filter((line) => !line.startsWith('|'))
     .filter((line) => !line.trim().startsWith('- '))
     .slice(0, 5)
 
