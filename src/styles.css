@@ -331,11 +331,6 @@ pre code {
   color: var(--foreground);
   text-decoration: none;
 }
-.handbook-cover span {
-  display: block;
-  margin-top: 12px;
-  font-size: 12px;
-}
 .handbook-cover img {
   display: block;
   width: 128px;

@@ -3,36 +3,36 @@ import { ArrowUpRight } from 'lucide-react'
 import { HANDBOOKS } from '#/lib/handbooks'
 
 const TOPICS = {
-  baby: {
-    label: 'Your baby',
+  pregnancy: {
+    label: 'Pregnancy',
     questions: [
-      'How can my baby sleep safely?',
-      'How do I know my baby is getting enough milk?',
-      'What can I try when my baby cries?',
+      'How can I ease nausea during pregnancy?',
+      'Which foods should I avoid while pregnant?',
+      'How can I tell if labour is starting?',
+    ],
+  },
+  baby: {
+    label: 'Baby',
+    questions: [
+      'How can I help my baby sleep safely?',
+      'How can I tell if my baby is getting enough milk?',
+      'What can I try when my baby won’t stop crying?',
     ],
   },
   toddler: {
     label: 'Toddler',
     questions: [
-      'What can I try when my 2-year-old has a tantrum?',
-      'How can I help my 18-month-old with picky eating?',
-      'How do I know if my toddler is ready to use the toilet?',
+      'What can I do when my toddler has a tantrum?',
+      'How can I handle picky eating?',
+      'How do I know if my child is ready to use the toilet?',
     ],
   },
-  pregnancy: {
-    label: 'Pregnancy',
-    questions: [
-      'When should I call my health care provider?',
-      'How can I tell if I am in labour?',
-      'What should I pack for the hospital?',
-    ],
-  },
-  you: {
-    label: 'You, too',
+  parenting: {
+    label: 'Parenting',
     questions: [
       'What can help with recovery after birth?',
-      'How can my partner support me?',
-      'Where can I find support as a new parent?',
+      'What can I do when parenting feels overwhelming?',
+      'How can my partner and I share the load?',
     ],
   },
 }
@@ -63,7 +63,6 @@ export function HandbookWelcome({
               width={774}
               height={603}
             />
-            <span>{book.title}</span>
           </a>
         ))}
       </div>
