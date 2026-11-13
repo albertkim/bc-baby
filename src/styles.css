@@ -315,17 +315,19 @@ pre code {
   display: flex;
   align-items: center;
   gap: 18px;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 .handbook-covers::before {
   content: '';
   position: absolute;
   z-index: -1;
-  inset: -15px -24px -12px;
+  inset: -15px 0 -12px;
   border-radius: 50% 48% 42% 50%;
   background: #dcebe6;
 }
 .handbook-cover {
+  min-width: 0;
   color: var(--foreground);
   text-decoration: none;
 }
@@ -337,6 +339,7 @@ pre code {
 .handbook-cover img {
   display: block;
   width: 128px;
+  max-width: 100%;
   height: auto;
   transform: rotate(2deg);
   border-radius: 5px;
