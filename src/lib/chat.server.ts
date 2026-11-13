@@ -2,7 +2,6 @@ import { convertToModelMessages, safeValidateUIMessages, streamText } from 'ai'
 import { z } from 'zod'
 import { buildSourceContext } from './content.server'
 import {
-  type HandbookMessage,
   getMessageText,
   MAX_CONTEXT_MESSAGES,
   MAX_QUESTION_LENGTH,
@@ -142,16 +141,8 @@ Selected sources: ${sourceList}
       abortSignal: signal,
       timeout: 45_000,
     })
-    return result.toUIMessageStreamResponse<HandbookMessage>({
+    return result.toUIMessageStreamResponse({
       sendReasoning: false,
-      messageMetadata: ({ part }) =>
-        part.type === 'start'
-          ? {
-              handbookIds: [
-                ...new Set(sources.map((source) => source.handbookId)),
-              ],
-            }
-          : undefined,
       onError: reportError,
     })
   } catch (error) {

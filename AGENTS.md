@@ -1,5 +1,6 @@
 # AGENTS.md
 
+- Work directly on `main`. Commit and push completed changes to `main`; use a branch, worktree, or pull request only when explicitly requested.
 - Do not add or run tests in this project. Keep test files, test frameworks, testing libraries, and smoke-test scripts out of the repository.
 - Verify changes with formatting, typechecking, linting, and builds.
 - Treat handbook Markdown in `content/` as curated source material. Reconstruct headings, paragraphs, lists, tables, age ranges, and callouts from the source PDFs; preserve substantive information and flag ambiguous source wording rather than guessing.

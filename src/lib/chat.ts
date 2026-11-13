@@ -1,9 +1,4 @@
 import type { UIMessage } from 'ai'
-import type { HANDBOOKS } from './handbooks'
-
-export type HandbookMessage = UIMessage<{
-  handbookIds: Array<keyof typeof HANDBOOKS>
-}>
 
 export const MIN_QUESTION_LENGTH = 5
 export const MAX_QUESTION_LENGTH = 4000

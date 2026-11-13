@@ -124,13 +124,22 @@ pre code {
   gap: 4px;
 }
 .handbook-masthead h1 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   margin: 0;
   font-size: 21px;
   font-weight: 650;
   letter-spacing: -0.6px;
+}
+.handbook-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.handbook-brand:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 5px;
+  border-radius: 4px;
 }
 .brand-dot {
   width: 8px;
@@ -282,23 +291,6 @@ pre code {
   flex-direction: column;
   gap: 25px;
 }
-.answer-handbooks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 12px;
-}
-.answer-handbooks a {
-  border-radius: 8px;
-  padding: 5px 9px;
-  background: var(--accent);
-  color: var(--accent-foreground);
-  font-size: 12px;
-  text-decoration: none;
-}
-.answer-handbooks a:hover {
-  background: #c4dfdd;
-}
 .handbook-welcome {
   display: flex;
   width: 100%;
@@ -445,7 +437,13 @@ pre code {
   line-height: 1.7;
 }
 .chat-answer {
+  align-self: flex-start;
   min-width: 0;
+  max-width: 92%;
+  border: 1px solid var(--border);
+  border-radius: 13px 13px 13px 4px;
+  padding: 16px 18px;
+  background: var(--card);
   color: var(--foreground);
   font-size: 14px;
   line-height: 1.8;
@@ -541,6 +539,10 @@ pre code {
   }
   .chat-question {
     max-width: 90%;
+  }
+  .chat-answer {
+    max-width: 100%;
+    padding: 14px 16px;
   }
 }
 

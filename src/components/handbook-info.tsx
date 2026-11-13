@@ -10,8 +10,10 @@ export function HandbookInfo({ children }: { children?: ReactNode }) {
       <header className="handbook-header">
         <div className="handbook-masthead">
           <h1>
-            BC Baby
-            <span className="brand-dot" aria-hidden="true" />
+            <a href="/" className="handbook-brand" aria-label="BC Baby home">
+              BC Baby
+              <span className="brand-dot" aria-hidden="true" />
+            </a>
           </h1>
           <div className="handbook-actions">
             {children}

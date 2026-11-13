@@ -5,12 +5,10 @@ import { ArrowUp, LoaderCircle } from 'lucide-react'
 import { Collapsible } from 'radix-ui'
 import {
   getMessageText,
-  type HandbookMessage,
   MAX_CONTEXT_MESSAGES,
   MAX_QUESTION_LENGTH,
   MIN_QUESTION_LENGTH,
 } from '#/lib/chat'
-import { HANDBOOKS } from '#/lib/handbooks'
 import { HandbookInfo } from './handbook-info'
 import { HandbookWelcome } from './handbook-welcome'
 import { Button } from './ui/button'
@@ -26,7 +24,7 @@ export function HandbookChat() {
   const followOutputRef = useRef(false)
   const transport = useMemo(
     () =>
-      new DefaultChatTransport<HandbookMessage>({
+      new DefaultChatTransport({
         api: '/api/chat',
         prepareSendMessagesRequest: ({ messages }) => ({
           body: {
@@ -48,7 +46,7 @@ export function HandbookChat() {
     clearError,
     regenerate,
     stop,
-  } = useChat<HandbookMessage>({ transport })
+  } = useChat({ transport })
   const busy = status === 'submitted' || status === 'streaming'
 
   // Observe rendered height so late-loading Markdown and images also follow
@@ -124,10 +122,7 @@ export function HandbookChat() {
               messages.map((message) => {
                 const text = getMessageText(message)
                 const isUser = message.role === 'user'
-                const handbookIds = isUser
-                  ? []
-                  : (message.metadata?.handbookIds ?? [])
-                if (!text && handbookIds.length === 0) return null
+                if (!text) return null
                 return (
                   <div
                     key={message.id}
@@ -141,34 +136,15 @@ export function HandbookChat() {
                     {isUser ? (
                       <div className="whitespace-pre-wrap">{text}</div>
                     ) : (
-                      <>
-                        {handbookIds.length > 0 ? (
-                          <div
-                            className="answer-handbooks"
-                            aria-label="Selected handbooks"
-                          >
-                            {handbookIds.map((id) => (
-                              <a
-                                key={id}
-                                href={HANDBOOKS[id].url}
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                {HANDBOOKS[id].title}
-                              </a>
-                            ))}
-                          </div>
-                        ) : null}
-                        <Suspense
-                          fallback={
-                            <div className="whitespace-pre-wrap">{text}</div>
-                          }
-                        >
-                          <AnswerMarkdown isAnimating={false}>
-                            {text}
-                          </AnswerMarkdown>
-                        </Suspense>
-                      </>
+                      <Suspense
+                        fallback={
+                          <div className="whitespace-pre-wrap">{text}</div>
+                        }
+                      >
+                        <AnswerMarkdown isAnimating={false}>
+                          {text}
+                        </AnswerMarkdown>
+                      </Suspense>
                     )}
                   </div>
                 )
