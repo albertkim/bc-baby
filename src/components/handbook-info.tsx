@@ -11,7 +11,7 @@ export function HandbookInfo() {
       <header className="handbook-header">
         <div className="handbook-masthead">
           <h1>
-            Baby&apos;s Best Chance
+            BC Baby
             <span className="brand-dot" aria-hidden="true" />
           </h1>
           <Dialog.Trigger asChild>
