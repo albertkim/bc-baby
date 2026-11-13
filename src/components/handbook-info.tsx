@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { ArrowUpRight, X } from 'lucide-react'
 import { Dialog } from 'radix-ui'
 import { Button } from './ui/button'
@@ -5,7 +6,7 @@ import { Button } from './ui/button'
 export const HANDBOOK_URL =
   'https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and'
 
-export function HandbookInfo() {
+export function HandbookInfo({ children }: { children?: ReactNode }) {
   return (
     <Dialog.Root>
       <header className="handbook-header">
@@ -14,11 +15,14 @@ export function HandbookInfo() {
             BC Baby
             <span className="brand-dot" aria-hidden="true" />
           </h1>
-          <Dialog.Trigger asChild>
-            <Button variant="ghost" size="sm" className="info-trigger">
-              About
-            </Button>
-          </Dialog.Trigger>
+          <div className="handbook-actions">
+            {children}
+            <Dialog.Trigger asChild>
+              <Button variant="ghost" size="sm">
+                About
+              </Button>
+            </Dialog.Trigger>
+          </div>
         </div>
       </header>
       <Dialog.Portal>
