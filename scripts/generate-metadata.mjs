@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { HANDBOOKS } from '../src/lib/handbooks.ts'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 const OUTPUT_PATH = path.join(CONTENT_DIR, 'metadata.json')
@@ -87,7 +88,10 @@ function getSummary(lines) {
     .filter((line) => line.trim())
     .filter((line) => !line.startsWith('#'))
     .filter((line) => !line.startsWith('_Source pages:'))
-    .filter((line) => !/^\*\*[A-Z0-9 ?&/-]+\*\*$/.test(line))
+    .filter((line) => !line.startsWith('_Handbook:'))
+    .filter((line) => !line.startsWith('```'))
+    .filter((line) => !/^\*\*[^*]+\*\*:?$/.test(line))
+    .filter((line) => !line.startsWith('|'))
     .filter((line) => !line.trim().startsWith('- '))
     .slice(0, 5)
 
@@ -112,14 +116,20 @@ async function main() {
     const headings = lines
       .filter((line) => /^##+\s+/.test(line))
       .map((line) => line.replace(/^##+\s+/, '').trim())
-      .slice(0, 12)
+    const handbookId = filename.startsWith('tfs-') ? 'toddler' : 'baby'
+    const handbook = HANDBOOKS[handbookId]
+    const pages = content.match(/_Source pages: (\d+)-(\d+)_/)
+    if (!pages) throw new Error(`Missing source pages: ${filename}`)
 
     entries.push({
       id: filename.replace(/\.md$/, ''),
+      handbookId,
+      startPage: Number(pages[1]),
+      endPage: Number(pages[2]),
       title,
       path: `content/${filename}`,
       summary: getSummary(lines),
-      keywords: collectKeywords(title, headings.join(' ')),
+      keywords: collectKeywords(title, headings.join(' '), handbook.title),
       headings,
     })
   }

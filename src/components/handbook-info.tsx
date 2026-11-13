@@ -2,9 +2,7 @@ import type { ReactNode } from 'react'
 import { ArrowUpRight, X } from 'lucide-react'
 import { Dialog } from 'radix-ui'
 import { Button } from './ui/button'
-
-export const HANDBOOK_URL =
-  'https://www.healthlinkbc.ca/living-well/parenting/parenting-babies-0-12-months/babys-best-chance-parents-handbook-pregnancy-and'
+import { HANDBOOKS } from '#/lib/handbooks'
 
 export function HandbookInfo({ children }: { children?: ReactNode }) {
   return (
@@ -47,18 +45,23 @@ export function HandbookInfo({ children }: { children?: ReactNode }) {
           />
           <Dialog.Title className="about-title">About BC Baby</Dialog.Title>
           <Dialog.Description className="about-description">
-            I’m Albert, a new parent in BC. I made this so the Baby’s Best
-            Chance handbook is easier to use on a phone.
+            I’m Albert, a parent in BC. I made this so BC’s pregnancy, baby, and
+            toddler handbooks are easier to use on a phone.
           </Dialog.Description>
-          <a
-            href={HANDBOOK_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="about-handbook-link"
-          >
-            Read the handbook{' '}
-            <ArrowUpRight aria-hidden="true" className="size-4" />
-          </a>
+          <div className="about-handbooks">
+            {Object.values(HANDBOOKS).map((book) => (
+              <a
+                key={book.title}
+                href={book.url}
+                target="_blank"
+                rel="noreferrer"
+                className="about-handbook-link"
+              >
+                {book.title}
+                <ArrowUpRight aria-hidden="true" className="size-4" />
+              </a>
+            ))}
+          </div>
           <div className="about-contact">
             <p>Made by Albert Kim</p>
             <div>

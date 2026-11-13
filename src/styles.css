@@ -206,12 +206,16 @@ pre code {
   font-size: 15px;
   line-height: 1.7;
 }
+.about-handbooks {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+}
 .about-handbook-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-top: 24px;
   border-radius: 10px;
   padding: 13px 16px;
   background: var(--accent);
@@ -278,6 +282,23 @@ pre code {
   flex-direction: column;
   gap: 25px;
 }
+.answer-handbooks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.answer-handbooks a {
+  border-radius: 8px;
+  padding: 5px 9px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font-size: 12px;
+  text-decoration: none;
+}
+.answer-handbooks a:hover {
+  background: #c4dfdd;
+}
 .handbook-welcome {
   display: flex;
   width: 100%;
@@ -288,28 +309,40 @@ pre code {
   padding: 12px 0;
   text-align: center;
 }
-.handbook-cover {
+.handbook-covers {
   position: relative;
   isolation: isolate;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 100%;
   margin-bottom: 30px;
 }
-.handbook-cover::before {
+.handbook-covers::before {
   content: '';
   position: absolute;
   z-index: -1;
-  inset: -15px -50px -12px;
+  inset: -15px 0 -12px;
   border-radius: 50% 48% 42% 50%;
   background: #dcebe6;
 }
+.handbook-cover {
+  min-width: 0;
+  color: var(--foreground);
+  text-decoration: none;
+}
 .handbook-cover img {
   display: block;
-  width: 150px;
+  width: 128px;
+  max-width: 100%;
   height: auto;
   transform: rotate(2deg);
   border-radius: 5px;
   box-shadow: 2px 5px 10px #21484b18;
   transition: transform 200ms ease;
+}
+.handbook-cover:first-child img {
+  transform: rotate(-3deg);
 }
 .handbook-cover:hover img {
   transform: rotate(0deg) translateY(-2px);
@@ -491,7 +524,7 @@ pre code {
     padding: 20px 0 24px;
   }
   .handbook-cover img {
-    width: 140px;
+    width: 115px;
   }
   .question-topics {
     gap: 6px;
@@ -515,7 +548,7 @@ pre code {
   .handbook-welcome {
     padding: 16px 0;
   }
-  .handbook-cover {
+  .handbook-covers {
     margin-bottom: 22px;
   }
   .handbook-cover img {

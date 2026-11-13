@@ -1,30 +1,38 @@
 import { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
-import { HANDBOOK_URL } from './handbook-info'
+import { HANDBOOKS } from '#/lib/handbooks'
 
 const TOPICS = {
-  baby: {
-    label: 'Your baby',
-    questions: [
-      'How can my baby sleep safely?',
-      'How do I know my baby is getting enough milk?',
-      'What can I try when my baby cries?',
-    ],
-  },
   pregnancy: {
     label: 'Pregnancy',
     questions: [
-      'When should I call my health care provider?',
-      'How can I tell if I am in labour?',
-      'What should I pack for the hospital?',
+      'How can I ease nausea during pregnancy?',
+      'Which foods should I avoid while pregnant?',
+      'How can I tell if labour is starting?',
     ],
   },
-  you: {
-    label: 'You, too',
+  baby: {
+    label: 'Baby',
+    questions: [
+      'How can I help my baby sleep safely?',
+      'How can I tell if my baby is getting enough milk?',
+      'What can I try when my baby won’t stop crying?',
+    ],
+  },
+  toddler: {
+    label: 'Toddler',
+    questions: [
+      'What can I do when my toddler has a tantrum?',
+      'How can I handle picky eating?',
+      'How do I know if my child is ready to use the toilet?',
+    ],
+  },
+  parenting: {
+    label: 'Parenting',
     questions: [
       'What can help with recovery after birth?',
-      'How can my partner support me?',
-      'Where can I find support as a new parent?',
+      'What can I do when parenting feels overwhelming?',
+      'How can my partner and I share the load?',
     ],
   },
 }
@@ -40,21 +48,26 @@ export function HandbookWelcome({
 
   return (
     <div className="handbook-welcome message-entry">
-      <a
-        href={HANDBOOK_URL}
-        target="_blank"
-        rel="noreferrer"
-        className="handbook-cover"
-      >
-        <img
-          src="/babys-best-chance-cover.png"
-          alt="Baby's Best Chance handbook cover"
-          width={2568}
-          height={1992}
-        />
-      </a>
+      <div className="handbook-covers">
+        {Object.values(HANDBOOKS).map((book) => (
+          <a
+            key={book.title}
+            href={book.url}
+            target="_blank"
+            rel="noreferrer"
+            className="handbook-cover"
+          >
+            <img
+              src={book.cover}
+              alt={`${book.title} handbook cover`}
+              width={774}
+              height={603}
+            />
+          </a>
+        ))}
+      </div>
       <h2>What’s on your mind?</h2>
-      <p className="welcome-subtitle">Ask the handbook</p>
+      <p className="welcome-subtitle">Ask the handbooks</p>
       <fieldset className="question-topics">
         <legend className="sr-only">Question topics</legend>
         {(Object.keys(TOPICS) as Topic[]).map((value) => (
