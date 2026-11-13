@@ -1,22 +1,21 @@
 import { defineConfig } from 'vite'
-import { devtools } from '@tanstack/devtools-vite'
-import tsconfigPaths from 'vite-tsconfig-paths'
-
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
-
-import viteReact from '@vitejs/plugin-react'
+import { nitroV2Plugin } from '@tanstack/nitro-v2-vite-plugin'
+import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { nitro } from 'nitro/vite'
 
-const config = defineConfig({
+export default defineConfig({
   plugins: [
-    devtools(),
-    nitro({ rollupConfig: { external: [/^@sentry\//] } }),
-    tsconfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
     tanstackStart(),
-    viteReact(),
+    nitroV2Plugin({
+      compatibilityDate: '2026-11-13',
+      vercel: { functions: { maxDuration: 60 } },
+    }),
+    react(),
   ],
+  resolve: { tsconfigPaths: true },
+  // Lucide's Node and bundler export conditions resolve to different files.
+  // Bundle the used icons so deployment tracing cannot omit the Node entry.
+  ssr: { noExternal: ['lucide-react'] },
 })
-
-export default config

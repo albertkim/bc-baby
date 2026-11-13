@@ -8,56 +8,44 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "lint": "eslint",
-    "format": "prettier --check .",
-    "check": "prettier --write . && eslint --fix",
-    "generate:metadata": "node scripts/generate-metadata.mjs"
+    "preview": "node .output/server/index.mjs",
+    "lint": "oxlint",
+    "format": "prettier --write .",
+    "check": "npm run format:check && npm run typecheck && npm run lint && npm run build",
+    "generate:metadata": "node scripts/generate-metadata.mjs",
+    "typecheck": "tsc --noEmit",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@ai-sdk/react": "3.0.136",
-    "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-devtools": "0.10.0",
-    "@tanstack/react-router": "1.168.1",
-    "@tanstack/react-router-devtools": "1.166.10",
-    "@tanstack/react-router-ssr-query": "1.166.10",
-    "@tanstack/react-start": "1.167.2",
-    "@tanstack/router-plugin": "1.167.2",
-    "ai": "6.0.134",
+    "@ai-sdk/react": "4.0.176",
+    "@tailwindcss/vite": "4.3.5",
+    "@tanstack/react-router": "1.170.46",
+    "@tanstack/react-start": "1.169.5",
+    "ai": "7.0.172",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-react": "^0.545.0",
-    "nitro": "npm:nitro-nightly@latest",
-    "radix-ui": "^1.4.3",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "streamdown": "^2.5.0",
-    "tailwind-merge": "3.5.0",
-    "tailwindcss": "^4.1.18",
-    "zod": "4.3.6"
+    "lucide-react": "1.72.0",
+    "radix-ui": "1.8.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "streamdown": "2.7.1",
+    "tailwind-merge": "3.7.0",
+    "tailwindcss": "4.3.5",
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@tanstack/devtools-vite": "0.6.0",
-    "@tanstack/eslint-config": "0.4.0",
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/react": "^16.3.0",
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^5.1.4",
-    "jsdom": "^28.1.0",
-    "prettier": "^3.8.1",
-    "typescript": "^5.7.2",
-    "vite": "^7.3.1",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.5"
+    "@tanstack/nitro-v2-vite-plugin": "1.155.2",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "nitropack": "2.13.6",
+    "prettier": "3.10.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "oxlint": "1.93.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "lightningcss"
-    ]
+  "engines": {
+    "node": "26.x"
   }
 }
