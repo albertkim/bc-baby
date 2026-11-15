@@ -19,12 +19,14 @@ export const LANGUAGES: Record<
   },
   'zh-Hans': {
     label: '简体中文',
-    instruction: 'Chinese using Simplified characters',
+    instruction:
+      'natural written Chinese using Simplified characters, with everyday wording familiar to parents in British Columbia',
     og: 'zh_CN',
   },
   'zh-Hant': {
     label: '繁體中文',
-    instruction: 'Chinese using Traditional characters',
+    instruction:
+      'natural written Chinese using Traditional characters, with everyday wording familiar to parents in British Columbia',
     og: 'zh_TW',
   },
   ko: {
@@ -223,7 +225,7 @@ export const MESSAGES: Record<Locale, Messages> = {
     about: 'À propos',
     aboutTitle: 'À propos de BC Baby',
     aboutDescription:
-      'Je m’appelle Albert et je suis parent en Colombie-Britannique. J’ai créé BC Baby pour rendre les guides provinciaux sur la grossesse, les bébés et les tout-petits plus faciles à consulter sur un téléphone.',
+      'Je m’appelle Albert et je suis parent en Colombie-Britannique. J’ai créé BC Baby pour rendre les guides provinciaux sur la grossesse, les bébés et les tout-petits plus faciles à consulter sur votre téléphone.',
     madeBy: 'Créé par Albert Kim',
     email: 'Courriel',
     closeAbout: 'Fermer la fenêtre À propos',
@@ -237,8 +239,8 @@ export const MESSAGES: Record<Locale, Messages> = {
     ask: 'Poser la question',
     placeholder: 'Posez votre question…',
     stop: 'Arrêter',
-    welcome: 'Qu’est-ce qui vous préoccupe?',
-    subtitle: 'Posez vos questions aux guides',
+    welcome: 'Qu’aimeriez-vous savoir?',
+    subtitle: 'Des réponses tirées des guides',
     topicsLabel: 'Sujets',
     cover: 'couverture du guide',
     province: 'Province de la Colombie-Britannique',
@@ -266,7 +268,7 @@ export const MESSAGES: Record<Locale, Messages> = {
       toddler: {
         label: 'Tout-petit',
         questions: [
-          'Que faire quand mon tout-petit fait une crise?',
+          'Que faire quand mon tout-petit fait une crise de colère?',
           'Comment aider mon enfant qui refuse certains aliments?',
           'Comment savoir si mon enfant est prêt à utiliser le petit pot?',
         ],
@@ -275,7 +277,7 @@ export const MESSAGES: Record<Locale, Messages> = {
         label: 'Vie de parent',
         questions: [
           'Qu’est-ce qui peut aider à récupérer après l’accouchement?',
-          'Que faire quand je me sens dépassé par mon rôle de parent?',
+          'Que faire quand les responsabilités de parent me dépassent?',
           'Comment mieux partager les responsabilités avec mon ou ma partenaire?',
         ],
       },
@@ -294,15 +296,15 @@ export const MESSAGES: Record<Locale, Messages> = {
     },
   },
   'zh-Hans': {
-    title: 'BC Baby · 孕期、婴儿与幼儿育儿问答',
+    title: 'BC Baby · 孕期与婴幼儿育儿问答',
     description:
-      '关于孕期、婴儿照护和幼儿发育的问题，依据卑诗省《Baby’s Best Chance》和《Toddler’s First Steps》育儿手册为您解答。',
+      '依据卑诗省《Baby’s Best Chance》和《Toddler’s First Steps》育儿手册，解答您关于孕期、婴儿照护和幼儿发育的问题。',
     language: '语言',
     home: 'BC Baby 首页',
     about: '关于',
     aboutTitle: '关于 BC Baby',
     aboutDescription:
-      '我是 Albert，也是一位住在卑诗省的家长。我制作了 BC Baby，希望让大家用手机查阅卑诗省的孕期、婴儿和幼儿育儿手册时更方便。',
+      '我是 Albert，一位住在卑诗省的家长。我做了 BC Baby，让大家在手机上查阅卑诗省的孕期和婴幼儿育儿手册更方便。',
     madeBy: '由 Albert Kim 制作',
     email: '电子邮件',
     closeAbout: '关闭关于窗口',
@@ -347,14 +349,14 @@ export const MESSAGES: Record<Locale, Messages> = {
         questions: [
           '孩子发脾气时，我该怎么办？',
           '孩子挑食怎么办？',
-          '怎样判断孩子是否准备好如厕训练？',
+          '怎样判断孩子是否准备好开始如厕训练？',
         ],
       },
       parenting: {
-        label: '家长生活',
+        label: '为人父母',
         questions: [
           '产后怎样帮助身体恢复？',
-          '带孩子让我感到不堪重负，该怎么办？',
+          '带孩子让我压力很大，该怎么办？',
           '我和伴侣怎样分担育儿责任？',
         ],
       },
@@ -363,22 +365,22 @@ export const MESSAGES: Record<Locale, Messages> = {
       INVALID_REQUEST: '问题未能发送，请重试。',
       TOO_LONG: '这段对话太长了，请开始新对话。',
       EMPTY_QUESTION: '请输入问题。',
-      QUESTION_TOO_LONG: '问题请不要超过 4,000 个字符。',
+      QUESTION_TOO_LONG: '问题不能超过 4,000 个字符。',
       UNAVAILABLE: '暂时无法查阅手册，请稍后重试。',
       FAILED: '回答未能完成，请重试。',
       STOPPED: '已停止回答。',
     },
   },
   'zh-Hant': {
-    title: 'BC Baby · 孕期、嬰兒與幼兒育兒問答',
+    title: 'BC Baby · 孕期與嬰幼兒育兒問答',
     description:
-      '關於孕期、嬰兒照護和幼兒發展的問題，依據卑詩省《Baby’s Best Chance》和《Toddler’s First Steps》育兒手冊為您解答。',
+      '依據卑詩省《Baby’s Best Chance》和《Toddler’s First Steps》育兒手冊，解答您關於孕期、嬰兒照護和幼兒發展的問題。',
     language: '語言',
     home: 'BC Baby 首頁',
     about: '關於',
     aboutTitle: '關於 BC Baby',
     aboutDescription:
-      '我是 Albert，也是一位住在卑詩省的家長。我製作了 BC Baby，希望讓大家用手機查閱卑詩省的孕期、嬰兒和幼兒育兒手冊時更方便。',
+      '我是 Albert，一位住在卑詩省的家長。我做了 BC Baby，讓大家在手機上查閱卑詩省的孕期和嬰幼兒育兒手冊更方便。',
     madeBy: '由 Albert Kim 製作',
     email: '電子郵件',
     closeAbout: '關閉關於視窗',
@@ -423,14 +425,14 @@ export const MESSAGES: Record<Locale, Messages> = {
         questions: [
           '孩子發脾氣時，我該怎麼辦？',
           '孩子挑食怎麼辦？',
-          '怎樣判斷孩子是否準備好如廁訓練？',
+          '怎樣判斷孩子是否準備好開始如廁訓練？',
         ],
       },
       parenting: {
-        label: '家長生活',
+        label: '為人父母',
         questions: [
           '產後怎樣幫助身體恢復？',
-          '帶孩子讓我感到不堪負荷，該怎麼辦？',
+          '照顧孩子讓我壓力很大，該怎麼辦？',
           '我和伴侶怎樣分擔育兒責任？',
         ],
       },
@@ -439,14 +441,14 @@ export const MESSAGES: Record<Locale, Messages> = {
       INVALID_REQUEST: '問題未能傳送，請重試。',
       TOO_LONG: '這段對話太長了，請開始新對話。',
       EMPTY_QUESTION: '請輸入問題。',
-      QUESTION_TOO_LONG: '問題請不要超過 4,000 個字元。',
+      QUESTION_TOO_LONG: '問題不能超過 4,000 個字元。',
       UNAVAILABLE: '暫時無法查閱手冊，請稍後重試。',
       FAILED: '回答未能完成，請重試。',
       STOPPED: '已停止回答。',
     },
   },
   ko: {
-    title: 'BC Baby · 임신과 영유아 육아 질문',
+    title: 'BC Baby · 임신부터 영유아 돌봄까지',
     description:
       '임신, 아기 돌봄, 영유아 발달에 대해 물어보세요. BC주의 Baby’s Best Chance와 Toddler’s First Steps 안내서를 바탕으로 답해 드려요.',
     language: '언어',
@@ -454,7 +456,7 @@ export const MESSAGES: Record<Locale, Messages> = {
     about: '소개',
     aboutTitle: 'BC Baby 소개',
     aboutDescription:
-      '안녕하세요, BC주에서 아이를 키우는 Albert예요. BC주의 임신·영유아 육아 안내서를 휴대전화로 더 편하게 찾아볼 수 있도록 BC Baby를 만들었어요.',
+      '안녕하세요. BC주에서 아이를 키우는 Albert예요. 임신과 영유아 돌봄에 관한 BC주 안내서를 휴대전화에서 더 쉽게 찾아볼 수 있도록 BC Baby를 만들었어요.',
     madeBy: 'Albert Kim이 만들었어요',
     email: '이메일',
     closeAbout: '소개 창 닫기',
@@ -489,8 +491,8 @@ export const MESSAGES: Record<Locale, Messages> = {
       baby: {
         label: '아기',
         questions: [
-          '아기가 안전하게 자도록 어떻게 도와줄 수 있나요?',
-          '아기가 젖을 충분히 먹는지 어떻게 알 수 있나요?',
+          '아기를 안전하게 재우려면 어떻게 해야 하나요?',
+          '아기가 모유나 분유를 충분히 먹고 있는지 어떻게 알 수 있나요?',
           '아기가 계속 울 때 어떤 방법을 써볼 수 있나요?',
         ],
       },
@@ -503,11 +505,11 @@ export const MESSAGES: Record<Locale, Messages> = {
         ],
       },
       parenting: {
-        label: '부모 생활',
+        label: '부모의 일상',
         questions: [
           '출산 후 회복에 무엇이 도움이 되나요?',
           '육아가 너무 버거울 때 어떻게 하면 좋을까요?',
-          '배우자와 육아 부담을 어떻게 나눌 수 있나요?',
+          '파트너와 육아 부담을 어떻게 나눌 수 있나요?',
         ],
       },
     },
