@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { DefaultChatTransport } from 'ai'
-import { ArrowUp, LoaderCircle } from 'lucide-react'
+import { ArrowUp, LoaderCircle, SquarePen } from 'lucide-react'
 import { Collapsible } from 'radix-ui'
 import {
   getMessageText,
@@ -9,6 +9,7 @@ import {
   MAX_QUESTION_LENGTH,
   MIN_QUESTION_LENGTH,
 } from '#/lib/chat'
+import { MESSAGES, isChatError, type Locale } from '#/lib/locale'
 import { HandbookInfo } from './handbook-info'
 import { HandbookWelcome } from './handbook-welcome'
 import { Button } from './ui/button'
@@ -17,7 +18,8 @@ import { Textarea } from './ui/textarea'
 const AnswerMarkdown = lazy(async () => ({
   default: (await import('streamdown')).Streamdown,
 }))
-export function HandbookChat() {
+export function HandbookChat({ locale }: { locale: Locale }) {
+  const t = MESSAGES[locale]
   const [input, setInput] = useState('')
   const viewportRef = useRef<HTMLDivElement>(null)
   const transcriptRef = useRef<HTMLDivElement>(null)
@@ -26,8 +28,9 @@ export function HandbookChat() {
     () =>
       new DefaultChatTransport({
         api: '/api/chat',
-        prepareSendMessagesRequest: ({ messages }) => ({
+        prepareSendMessagesRequest: ({ messages, body }) => ({
           body: {
+            ...body,
             messages: messages.slice(-MAX_CONTEXT_MESSAGES).map((message) => ({
               ...message,
               parts: message.parts.filter((part) => part.type === 'text'),
@@ -72,19 +75,22 @@ export function HandbookChat() {
       return
     clearError()
     followOutputRef.current = true
-    void sendMessage({ text: value })
+    void sendMessage({ text: value }, { body: { locale } })
     setInput('')
   }
 
   return (
     <main className="handbook-app">
-      <HandbookInfo>
+      <HandbookInfo locale={locale}>
         {messages.length > 0 ? (
           <Button
             type="button"
             variant="ghost"
             size="sm"
             disabled={busy}
+            className="new-chat-button"
+            aria-label={t.newChat}
+            title={t.newChat}
             onClick={() => {
               setMessages([])
               clearError()
@@ -92,11 +98,12 @@ export function HandbookChat() {
               followOutputRef.current = false
             }}
           >
-            New chat
+            <SquarePen aria-hidden="true" className="size-4" />
+            <span>{t.newChat}</span>
           </Button>
         ) : null}
       </HandbookInfo>
-      <section aria-label="Handbook chat" className="handbook-chat">
+      <section aria-label={t.chat} className="handbook-chat">
         <div
           ref={viewportRef}
           className="conversation-viewport"
@@ -112,12 +119,12 @@ export function HandbookChat() {
           <div
             ref={transcriptRef}
             role="log"
-            aria-label="Handbook conversation"
+            aria-label={t.conversation}
             aria-busy={busy}
             className="conversation-transcript"
           >
             {messages.length === 0 ? (
-              <HandbookWelcome onQuestion={submitMessage} />
+              <HandbookWelcome locale={locale} onQuestion={submitMessage} />
             ) : (
               messages.map((message) => {
                 const text = getMessageText(message)
@@ -126,7 +133,7 @@ export function HandbookChat() {
                 return (
                   <div
                     key={message.id}
-                    aria-label={isUser ? 'Your question' : 'Handbook answer'}
+                    aria-label={isUser ? t.yourQuestion : t.answer}
                     className={
                       isUser
                         ? 'message-entry chat-question'
@@ -155,7 +162,7 @@ export function HandbookChat() {
                 <Collapsible.Content className="collapsible-content">
                   <output className="flex items-center gap-2 py-1 text-sm text-muted-foreground">
                     <LoaderCircle className="size-4 animate-spin" />
-                    Reading the handbooks…
+                    {t.reading}
                   </output>
                 </Collapsible.Content>
               </Collapsible.Root>
@@ -168,7 +175,13 @@ export function HandbookChat() {
               role="alert"
               className="message-entry mb-3 flex items-center justify-between gap-3 rounded-md bg-red-50 p-3 text-sm text-red-800"
             >
-              <p>{error.message}</p>
+              <p>
+                {
+                  t.errors[
+                    isChatError(error.message) ? error.message : 'FAILED'
+                  ]
+                }
+              </p>
               <Button
                 type="button"
                 variant="outline"
@@ -176,10 +189,10 @@ export function HandbookChat() {
                 onClick={() => {
                   clearError()
                   followOutputRef.current = true
-                  void regenerate()
+                  void regenerate({ body: { locale } })
                 }}
               >
-                Try again
+                {t.retry}
               </Button>
             </div>
           ) : null}
@@ -203,9 +216,9 @@ export function HandbookChat() {
                   submitMessage(input)
                 }
               }}
-              aria-label="Ask the handbook"
+              aria-label={t.ask}
               maxLength={MAX_QUESTION_LENGTH}
-              placeholder="Ask a question…"
+              placeholder={t.placeholder}
               className="chat-input"
               rows={1}
             />
@@ -218,7 +231,7 @@ export function HandbookChat() {
                   void stop()
                 }}
               >
-                Stop
+                {t.stop}
               </Button>
             ) : (
               <Button
@@ -227,7 +240,7 @@ export function HandbookChat() {
                 className="composer-action"
               >
                 <ArrowUp aria-hidden="true" className="size-5" />
-                <span className="sr-only">Ask</span>
+                <span className="sr-only">{t.ask}</span>
               </Button>
             )}
           </form>

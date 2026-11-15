@@ -131,6 +131,7 @@ pre code {
 }
 .handbook-brand {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   gap: 10px;
   color: inherit;
@@ -657,5 +658,100 @@ pre code {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+.language-trigger {
+  gap: 6px;
+  white-space: nowrap;
+}
+.language-menu {
+  z-index: 60;
+  min-width: 180px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 8px 28px #173b4018;
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  animation: language-menu-enter 140ms ease-out;
+}
+.language-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 42px;
+  padding: 9px 12px;
+  border-radius: 7px;
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+}
+.language-option[data-highlighted],
+.language-option[aria-current='true'] {
+  background: var(--accent);
+}
+.about-source-language {
+  margin: 16px 0 0;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.6;
+}
+@keyframes language-menu-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@media (max-width: 700px) {
+  .handbook-actions .new-chat-button {
+    width: 36px;
+    padding: 8px;
+  }
+  .new-chat-button span {
+    display: none;
+  }
+  .handbook-actions .language-trigger {
+    padding: 8px 6px;
+  }
+  .language-trigger > svg:first-child {
+    display: none;
+  }
+  .handbook-masthead {
+    gap: 8px;
+  }
+  .handbook-actions {
+    gap: 0;
+  }
+  :lang(fr) .question-topics {
+    flex-wrap: wrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .language-menu {
+    animation: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .handbook-app {
+    padding-inline: 16px;
+  }
+  .handbook-masthead h1 {
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+  .handbook-brand {
+    gap: 6px;
+  }
+  .brand-dot {
+    width: 6px;
+    height: 6px;
   }
 }

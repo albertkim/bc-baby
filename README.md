@@ -18,13 +18,21 @@ Copy `.env.example` to `.env` and set `AI_GATEWAY_API_KEY` to a Vercel AI Gatewa
 npm run dev
 ```
 
-Open http://localhost:3000. Questions can contain 5–4,000 characters. Enter sends a question; Shift+Enter inserts a new line. A response can be stopped or retried after an error. Conversation history lives in the current browser session and resets on reload.
+Open http://localhost:3000. Questions can contain 1–4,000 characters, including short Chinese or Korean questions. Enter sends a question; Shift+Enter inserts a new line. A response can be stopped or retried after an error. Conversation history lives in the current browser session and resets on reload.
+
+## Languages
+
+The interface, suggested questions, errors, and default answer language support English, Canadian French, Simplified Chinese, Traditional Chinese, and Korean. The header selector preserves the current conversation and draft; existing messages keep their original wording, and requests already in progress finish in the language used when sent.
+
+An explicit `?lang=en`, `fr`, `zh-Hans`, `zh-Hant`, or `ko` takes priority over the saved `bc-baby-language` cookie, then the browser’s weighted `Accept-Language` preferences. Unsupported preferences fall back to English. Chinese script tags take priority over region hints; Taiwan, Hong Kong, and Macau map to Traditional Chinese when no script is specified. Selecting a language remembers the choice for one year. Initial HTML uses the resolved language, with a private, non-cacheable response to keep one visitor’s preference from reaching another.
+
+Each language URL has translated metadata, a matching canonical URL, alternate-language links, and a sitemap entry. The curated English 2024 handbooks remain the evidence base and citation targets; generated answers translate that guidance, not the source PDFs. About explains which source editions the links open.
 
 ## Models and retrieval
 
 Both source selection and answer generation use `openai/gpt-6-luna` through Vercel AI Gateway, with medium reasoning set explicitly in `src/lib/models.server.ts`.
 
-Source selection uses metadata to choose up to four sections across both books, considering age and prior user questions in the bounded conversation. If selection fails or returns no valid IDs, local keyword search selects two sections from each book so neither is excluded. Answers stream from those excerpts. The app uses no embeddings or vector database.
+Source selection uses metadata to choose up to four sections across both books, considering age and prior user questions in the bounded conversation. Source selection interprets multilingual questions against the English metadata. It may return no sections when nothing is relevant; the answer then explains the lack of coverage. Selection failures surface as a localized retry rather than substituting unrelated excerpts. Answers stream from those excerpts. The app uses no embeddings or vector database.
 
 Handbook Markdown and metadata are bundled into the server build, so production needs no source checkout or runtime filesystem access. After editing handbook sections, regenerate metadata:
 

@@ -2,15 +2,28 @@ import type { ReactNode } from 'react'
 import { ArrowUpRight, X } from 'lucide-react'
 import { Dialog } from 'radix-ui'
 import { Button } from './ui/button'
+import { LanguageSelector } from './language-selector'
+import { localeHref, MESSAGES, type Locale } from '#/lib/locale'
 import { HANDBOOKS } from '#/lib/handbooks'
 
-export function HandbookInfo({ children }: { children?: ReactNode }) {
+export function HandbookInfo({
+  children,
+  locale,
+}: {
+  children?: ReactNode
+  locale: Locale
+}) {
+  const t = MESSAGES[locale]
   return (
     <Dialog.Root>
       <header className="handbook-header">
         <div className="handbook-masthead">
           <h1>
-            <a href="/" className="handbook-brand" aria-label="BC Baby home">
+            <a
+              href={localeHref(locale)}
+              className="handbook-brand"
+              aria-label={t.home}
+            >
               BC Baby
               <span className="brand-dot" aria-hidden="true" />
             </a>
@@ -19,9 +32,10 @@ export function HandbookInfo({ children }: { children?: ReactNode }) {
             {children}
             <Dialog.Trigger asChild>
               <Button variant="ghost" size="sm">
-                About
+                {t.about}
               </Button>
             </Dialog.Trigger>
+            <LanguageSelector locale={locale} />
           </div>
         </div>
       </header>
@@ -33,22 +47,21 @@ export function HandbookInfo({ children }: { children?: ReactNode }) {
               variant="ghost"
               size="icon"
               className="about-close"
-              aria-label="Close About"
+              aria-label={t.closeAbout}
             >
               <X aria-hidden="true" className="size-4" />
             </Button>
           </Dialog.Close>
           <img
             src="/BC.png"
-            alt="Province of British Columbia"
+            alt={t.province}
             width={1102}
             height={372}
             className="about-logo"
           />
-          <Dialog.Title className="about-title">About BC Baby</Dialog.Title>
+          <Dialog.Title className="about-title">{t.aboutTitle}</Dialog.Title>
           <Dialog.Description className="about-description">
-            I’m Albert, a parent in BC. I made this so BC’s pregnancy, baby, and
-            toddler handbooks are easier to use on a phone.
+            {t.aboutDescription}
           </Dialog.Description>
           <div className="about-handbooks">
             {Object.values(HANDBOOKS).map((book) => (
@@ -64,10 +77,11 @@ export function HandbookInfo({ children }: { children?: ReactNode }) {
               </a>
             ))}
           </div>
+          <p className="about-source-language">{t.sourceLanguage}</p>
           <div className="about-contact">
-            <p>Made by Albert Kim</p>
+            <p>{t.madeBy}</p>
             <div>
-              <a href="mailto:albert275@gmail.com">Email</a>
+              <a href="mailto:albert275@gmail.com">{t.email}</a>
               <a
                 href="https://www.linkedin.com/in/albert-kim-84a6169b/"
                 target="_blank"
